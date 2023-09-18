@@ -1,8 +1,0 @@
-prefix=/home/antoinedeng/Desktop/Simulator/devel
-
-Name: gps_plugin
-Description: Description of gps_plugin
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: gazebo_ros roscpp utils

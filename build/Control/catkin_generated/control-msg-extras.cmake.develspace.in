@@ -1,2 +1,0 @@
-set(control_MESSAGE_FILES "/home/antoinedeng/Desktop/Simulator/src/Control/msg/Lane.msg;/home/antoinedeng/Desktop/Simulator/src/Control/msg/Sign.msg")
-set(control_SERVICE_FILES "/home/antoinedeng/Desktop/Simulator/src/Control/srv/Localization.srv;/home/antoinedeng/Desktop/Simulator/src/Control/srv/nav.srv;/home/antoinedeng/Desktop/Simulator/src/Control/srv/get_direction.srv;/home/antoinedeng/Desktop/Simulator/src/Control/srv/dotted.srv")

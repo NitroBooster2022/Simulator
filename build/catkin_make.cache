@@ -1,2 +1,0 @@
-Control:example:models_pkg:nav_pkg/nav_demo:nav_pkg/urdf02_gazebo:plugins_pkgs/bno055_plugin:plugins_pkgs/car_plugin:plugins_pkgs/gps_plugin:plugins_pkgs/pedestrian_object_plugin:plugins_pkgs/realsense_gazebo_plugin:plugins_pkgs/traffic_light_plugin:sim_pkg:traffic_light_pkg:utils
--DCATKIN_DEVEL_PREFIX=/home/antoinedeng/Desktop/Simulator/devel -DCMAKE_INSTALL_PREFIX=/home/antoinedeng/Desktop/Simulator/install -G Unix Makefiles
