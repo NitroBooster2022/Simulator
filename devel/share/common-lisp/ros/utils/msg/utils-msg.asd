@@ -1,0 +1,26 @@
+
+(cl:in-package :asdf)
+
+(defsystem "utils-msg"
+  :depends-on (:roslisp-msg-protocol :roslisp-utils :std_msgs-msg
+)
+  :components ((:file "_package")
+    (:file "IMU" :depends-on ("_package_IMU"))
+    (:file "_package_IMU" :depends-on ("_package"))
+    (:file "ImgInfo" :depends-on ("_package_ImgInfo"))
+    (:file "_package_ImgInfo" :depends-on ("_package"))
+    (:file "Lane" :depends-on ("_package_Lane"))
+    (:file "_package_Lane" :depends-on ("_package"))
+    (:file "Sensors" :depends-on ("_package_Sensors"))
+    (:file "_package_Sensors" :depends-on ("_package"))
+    (:file "Sign" :depends-on ("_package_Sign"))
+    (:file "_package_Sign" :depends-on ("_package"))
+    (:file "encoder" :depends-on ("_package_encoder"))
+    (:file "_package_encoder" :depends-on ("_package"))
+    (:file "localisation" :depends-on ("_package_localisation"))
+    (:file "_package_localisation" :depends-on ("_package"))
+    (:file "odometry" :depends-on ("_package_odometry"))
+    (:file "_package_odometry" :depends-on ("_package"))
+    (:file "steering" :depends-on ("_package_steering"))
+    (:file "_package_steering" :depends-on ("_package"))
+  ))

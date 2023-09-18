@@ -1,0 +1,8 @@
+prefix=/home/antoinedeng/Desktop/Simulator/install
+
+Name: example
+Description: Description of example
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

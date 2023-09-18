@@ -1,0 +1,8 @@
+prefix=/home/antoinedeng/Desktop/Simulator/devel
+
+Name: control
+Description: Description of control
+Version: 0.0.0
+Cflags: -I/home/antoinedeng/Desktop/Simulator/devel/include
+Libs: -L${prefix}/lib 
+Requires: geometry_msgs roscpp rospy std_msgs tf2 tf2_geometry_msgs tf2_ros turtlesim message_runtime image_transport cv_bridge sensor_msgs opencv2
