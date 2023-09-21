@@ -6,7 +6,7 @@
 
 #include "ros/ros.h"
 #include "utils/IMU.h"
-
+#include "sensor_msgs/Imu.h"
 
 namespace gazebo
 {
@@ -25,8 +25,12 @@ namespace gazebo
 
             // A ROS publisher
             ros::Publisher                      m_pubBNO;
+            ros::Publisher                      m_pubIMU;
+            sensor_msgs::Imu                    m_imu_msg;
             
             utils::IMU                  m_bno055_pose;
+            ignition::math::Vector3d prev_linear_velocity;
+            ros::Time prev_time;
 
         // Default constructor
         public: BNO055();
