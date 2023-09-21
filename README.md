@@ -9,7 +9,7 @@ Build process:
 
 1- Clone the repo and the other packages you need to use.
 
-2- Add symbolic link to the packages with:
+2- Add symbolic link to the packages in src with:
 
 ```sh
 ln -s {path to package}/{package name}
