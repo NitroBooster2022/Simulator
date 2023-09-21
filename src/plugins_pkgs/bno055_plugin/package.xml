@@ -20,5 +20,9 @@
   <exec_depend>gazebo_ros</exec_depend>
   <exec_depend>roscpp</exec_depend>
   <exec_depend>utils</exec_depend>
+  
+  <build_depend>sensor_msgs</build_depend>
+  <build_export_depend>sensor_msgs</build_export_depend>
+  <exec_depend>sensor_msgs</exec_depend>
 
 </package>
