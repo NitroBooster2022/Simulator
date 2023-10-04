@@ -14,13 +14,10 @@ namespace gazebo
         void BNO055::Load(physics::ModelPtr model_ptr, sdf::ElementPtr sdf_ptr)
         {
             nh = boost::make_shared<ros::NodeHandle>();	
-            timer = nh->createTimer(ros::Duration(0.01), std::bind(&BNO055::OnUpdate, this));
+            timer = nh->createTimer(ros::Duration(0.02), std::bind(&BNO055::OnUpdate, this));
 	    	
       			// Save a pointer to the model for later use
       			this->m_model = model_ptr;
-
-      			// ignition::Vector3 prev_linear_velocity;
-            // ros::Time prev_time;
 
           	// Create topic name        	
           	std::string topic_name = "/automobile/IMU";
@@ -36,7 +33,8 @@ namespace gazebo
 
             this->m_ros_node.reset(new ::ros::NodeHandle("/bnoNODEvirt"));
           	this->m_pubBNO = this->m_ros_node->advertise<utils::IMU>(topic_name, 2);
-            this->m_pubIMU = this->m_ros_node->advertise<sensor_msgs::Imu>("/imu0", 2);
+            this->m_pubIMU = this->m_ros_node->advertise<sensor_msgs::Imu>("/imu", 2);
+            this->m_pubEncoder = this->m_ros_node->advertise<utils::encoder>("/encoder", 2);
 
             if(DEBUG)
             {
@@ -62,11 +60,8 @@ namespace gazebo
             std::default_random_engine generator;
             std::normal_distribution<double> distribution(0.0, 1.0);  // mean=0, standard deviation=1
 
-
-            
-
             this->m_imu_msg.header.stamp = ros::Time::now();
-            this->m_imu_msg.header.frame_id = "bno055_imu";
+            this->m_imu_msg.header.frame_id = "imu0";
 
             // orientation
             this->m_imu_msg.orientation.x = this->m_model->RelativePose().Rot().X() ;//+ 0.05 * distribution(generator);  // Added Gaussian noise
@@ -83,7 +78,7 @@ namespace gazebo
             this->m_imu_msg.angular_velocity.x = angular_velocity.X() ;//+ 0.1 * distribution(generator);
             this->m_imu_msg.angular_velocity.y = angular_velocity.Y() ;//+ 0.1 * distribution(generator);
             this->m_imu_msg.angular_velocity.z = angular_velocity.Z() ;//+ 0.1 * distribution(generator);
-            double angular_velocity_variance = 0.01;  // 0.1^2
+            double angular_velocity_variance = 0.0025;  // 0.1^2
             this->m_imu_msg.angular_velocity_covariance = {angular_velocity_variance, 0, 0, 
                                                            0, angular_velocity_variance, 0, 
                                                            0, 0, angular_velocity_variance};
@@ -102,10 +97,24 @@ namespace gazebo
             this->m_imu_msg.linear_acceleration_covariance = {linear_acceleration_variance, 0, 0, 
                                                               0, linear_acceleration_variance, 0, 
                                                               0, 0, linear_acceleration_variance};
-
-            // Publish the sensor_msgs/Imu message
             this->m_pubIMU.publish(this->m_imu_msg);
+
+            // encoder
+            this->m_encoder_msg.header.stamp = ros::Time::now();
+            this->m_encoder_msg.header.frame_id = "encoder";
+            double x_speed = current_linear_velocity.X();
+            double y_speed = current_linear_velocity.Y();
+            double speedYaw = atan2(y_speed, x_speed);
+            double speed = sqrt(x_speed * x_speed + y_speed * y_speed);
+            double yaw = this->m_model->RelativePose().Rot().Yaw();
+            double angle_diff = fmod((speedYaw - yaw + M_PI), (2 * M_PI)) - M_PI;
+            if (fabs(angle_diff) > 3 * M_PI / 4)
+            {
+                speed *= -1;
+            }
+            this->m_encoder_msg.speed = speed;
+            this->m_pubEncoder.publish(this->m_encoder_msg);
         };      
-    }; //namespace trafficLight
+    }; 
     GZ_REGISTER_MODEL_PLUGIN(bno055::BNO055)
-}; // namespace gazebo
+};
