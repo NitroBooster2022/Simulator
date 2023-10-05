@@ -21,6 +21,8 @@ ex:
 ln -s /home/antoinedeng/Desktop/BFMC_Simulator_packages/nav_pkg
 ```
 
+(When you add a symbolic link add it in the .gitignore as well)
+
 3-Build the repo with 
 
 ```sh
