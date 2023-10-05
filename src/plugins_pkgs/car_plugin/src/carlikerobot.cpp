@@ -2,7 +2,7 @@
 #include <opencv2/imgproc.hpp>
 #include <opencv2/imgcodecs.hpp>
 #include <opencv2/highgui.hpp>
-#define DEBUG false
+#define DEBUG true
 
 namespace gazebo{
     namespace carlikerobot{
@@ -95,6 +95,7 @@ namespace gazebo{
             if(DEBUG)
             {
                 ROS_INFO("Rear speed:\t\t[%f, %f]",l_Vr_L, l_Vr_R);
+                // divide by 30.303 to get speed
             }
 
             this->_model->GetJointController()->SetVelocityTarget(this->_jointLeft->GetScopedName(),l_Vr_L);

@@ -9,5 +9,5 @@
     <arg name="gui"          value="true"/>
   </include>
  
-  <node pkg="sim_pkg" type="delay.sh" args="5 sim_pkg cardepth.launch" name="car" output="screen"/>
+  <node pkg="sim_pkg" type="delay.sh" args="5 sim_pkg car.launch" name="car" output="screen"/>
   </launch>
