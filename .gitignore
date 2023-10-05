@@ -1,2 +1,7 @@
 /build/
 /devel/
+/CMakeLists.txt
+/src/nav_pkg/
+/src/Control/
+/src/mpc/
+/src/Advanced-Lane-Detection/
