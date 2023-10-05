@@ -1,7 +1,8 @@
 /build/
 /devel/
-/CMakeLists.txt
-/src/nav_pkg/
-/src/Control/
-/src/mpc/
-/src/Advanced-Lane-Detection/
+src/Advanced-Lane-Detection
+src/Control
+src/nav_pkg
+src/realsense-ros
+src/CMakeLists.txt
+src/mpc
