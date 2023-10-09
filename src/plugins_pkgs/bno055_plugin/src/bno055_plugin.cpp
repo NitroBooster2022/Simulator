@@ -1,5 +1,6 @@
 #include "bno055_plugin.hpp"
 #include <random> 
+#include <cmath>
 #define DEBUG false
 
 namespace gazebo
@@ -68,7 +69,8 @@ namespace gazebo
             this->m_imu_msg.orientation.y = this->m_model->RelativePose().Rot().Y() ;//+ 0.05 * distribution(generator);
             this->m_imu_msg.orientation.z = this->m_model->RelativePose().Rot().Z() ;//+ 0.05 * distribution(generator);
             this->m_imu_msg.orientation.w = this->m_model->RelativePose().Rot().W() ;//+ 0.05 * distribution(generator);
-            double orientation_variance = 0.0025;  // 0.05^2
+            //variance is 0.01 squared. use power function
+            double orientation_variance = pow(0.01, 2);
             this->m_imu_msg.orientation_covariance = {orientation_variance, 0, 0, 
                                                       0, orientation_variance, 0, 
                                                       0, 0, orientation_variance};
@@ -78,7 +80,7 @@ namespace gazebo
             this->m_imu_msg.angular_velocity.x = angular_velocity.X() ;//+ 0.1 * distribution(generator);
             this->m_imu_msg.angular_velocity.y = angular_velocity.Y() ;//+ 0.1 * distribution(generator);
             this->m_imu_msg.angular_velocity.z = angular_velocity.Z() ;//+ 0.1 * distribution(generator);
-            double angular_velocity_variance = 0.0025;  // 0.1^2
+            double angular_velocity_variance = pow(0.03, 2); 
             this->m_imu_msg.angular_velocity_covariance = {angular_velocity_variance, 0, 0, 
                                                            0, angular_velocity_variance, 0, 
                                                            0, 0, angular_velocity_variance};
@@ -93,7 +95,7 @@ namespace gazebo
             this->m_imu_msg.linear_acceleration.x = linear_acceleration.X();
             this->m_imu_msg.linear_acceleration.y = linear_acceleration.Y();
             this->m_imu_msg.linear_acceleration.z = linear_acceleration.Z();
-            double linear_acceleration_variance = 0.01;  // 0.1^2
+            double linear_acceleration_variance = pow(0.04, 2);
             this->m_imu_msg.linear_acceleration_covariance = {linear_acceleration_variance, 0, 0, 
                                                               0, linear_acceleration_variance, 0, 
                                                               0, 0, linear_acceleration_variance};
