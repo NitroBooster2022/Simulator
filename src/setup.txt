@@ -3,8 +3,8 @@
 export GAZEBO_MODEL_PATH="/home/antoinedeng/Documents/Simulator/src/models_pkg:$GAZEBO_MODEL_PATH"
 export ROS_PACKAGE_PATH="/home/antoinedeng/Documents/Simulator/src:$ROS_PACKAGE_PATH"
 
-export GAZEBO_MODEL_PATH="/home/simonli/Documents/Simulator/src/models_pkg:$GAZEBO_MODEL_PATH"
-export ROS_PACKAGE_PATH="/home/simonli/Documents/Simulator/src:$ROS_PACKAGE_PATH"
+export GAZEBO_MODEL_PATH="/home/simonli/Simulator/src/models_pkg:$GAZEBO_MODEL_PATH"
+export ROS_PACKAGE_PATH="/home/simonli/Simulator/src:$ROS_PACKAGE_PATH"
 
 CATKIN_SHELL=bash
 
