@@ -9,7 +9,7 @@
     <arg name="gui"          value="true"/>
   </include>
 
-  <node pkg="sim_pkg" type="delay.sh" args="5 sim_pkg car.launch"                 name="car"                  output="screen"/>
+  <node pkg="sim_pkg" type="delay.sh" args="5 sim_pkg cardepth.launch"                 name="car"                  output="screen"/>
   <node pkg="sim_pkg" type="delay.sh" args="5 sim_pkg enter_highway_signs.launch" name="enter_highway_signs"  output="screen"/>
   <node pkg="sim_pkg" type="delay.sh" args="5 sim_pkg leave_highway_signs.launch" name="leave_highway_signs"  output="screen"/>
   <node pkg="sim_pkg" type="delay.sh" args="5 sim_pkg prohibited_signs.launch"    name="prohibited_signs"     output="screen"/>
