@@ -181,7 +181,7 @@
         <infraredUpdateRate>30.0</infraredUpdateRate>
         <depthTopicName>depth/image_raw</depthTopicName>
         <depthCameraInfoTopicName>depth/camera_info</depthCameraInfoTopicName>
-        <colorTopicName>color/image_raw</colorTopicName>
+        <colorTopicName>image_raw</colorTopicName>
         <colorCameraInfoTopicName>color/camera_info</colorCameraInfoTopicName>
         <infrared1TopicName>infra1/image_raw</infrared1TopicName>
         <infrared1CameraInfoTopicName>infra1/camera_info</infrared1CameraInfoTopicName>
