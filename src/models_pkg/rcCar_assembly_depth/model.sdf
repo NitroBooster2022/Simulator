@@ -53,8 +53,8 @@
 
     <!-- realsense -->
     <include>
-      <!-- <uri>model://realsense2_description/realsense</uri> -->
       <uri>model://realsense_camera</uri>
+      <!-- <uri>model://camera</uri> -->
       <name>camera</name>
       <pose>0 0 0.2 0 0 -0.0</pose>
     </include>
@@ -303,7 +303,7 @@
         <ode>
           <limit>
             <cfm>0</cfm>
-            <erp>0.2</erp>
+            <erp>0.2</erp> 
           </limit>
           <suspension>
             <cfm>0</cfm>
@@ -312,6 +312,19 @@
         </ode>
       </physics>
     </joint>
+
+    <!-- <joint name='joint_camera' type='fixed'>
+      <parent>chassis::link</parent>
+      <child>camera::link_camera</child>
+      <pose frame=''>0 0 0 0 -0 0</pose>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <upper>0</upper>
+          <lower>0</lower>
+        </limit>
+      </axis>
+    </joint> -->
 
     <!-- Plugin  -->
     <plugin name='CarLikeRobotPlugin' filename='libcar_plugin.so'>
