@@ -30,6 +30,7 @@ catkin_make --pkg utils
 catkin_make
 ```
 
+(If there's an error about opencv2 such as ```<opencv2/imgproc.hpp>```, open /usr/include/opencv4 and move the opencv2 folder inside /usr/include/opencv4 to /usr/include)
 
 ## Requirements install:
 
