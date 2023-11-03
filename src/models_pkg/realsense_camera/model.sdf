@@ -23,9 +23,11 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://realsense_camera/meshes/realsense.dae</uri>
+            <uri>model://realsense_ros_gazebo/meshes/realsense_d435.stl</uri>
+            <!-- <uri>model://realsense_camera/meshes/realsense.dae</uri> -->
           </mesh>
         </geometry>
+        <pose>0 0 0 -1.570796 0 -1.570796</pose>
       </visual>
       <collision name='collision'>
         <laser_retro>0</laser_retro>
@@ -82,6 +84,23 @@
           </contact>
         </surface>
       </collision>
+      <sensor name="imu_sensor" type="imu">
+        <always_on>true</always_on>
+        <update_rate>100</update_rate>
+        <visualize>true</visualize>
+        <topic>__default_topic__</topic>
+        <plugin filename="libgazebo_ros_imu_sensor.so" name="imu_plugin">
+          <robotNamespace/>
+          <topicName>/camera/imu</topicName>
+          <bodyName>imu_link</bodyName>
+          <updateRateHZ>100.0</updateRateHZ>
+          <gaussianNoise>0.0</gaussianNoise>
+          <xyzOffset>0 0 0</xyzOffset>
+          <rpyOffset>0 0 0</rpyOffset>
+          <frameName>imu_link</frameName>
+          <initialOrientationAsReference>false</initialOrientationAsReference>
+        </plugin>
+      </sensor>
       <sensor name="color" type="camera">
         <pose frame="">0 -0.046 0.004 0 0 0</pose>
         <camera name="__default__">
