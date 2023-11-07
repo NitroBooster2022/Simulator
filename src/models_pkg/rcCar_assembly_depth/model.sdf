@@ -56,7 +56,8 @@
       <uri>model://realsense_camera</uri>
       <!-- <uri>model://camera</uri> -->
       <name>camera</name>
-      <pose>0 0 0.2 0 0 -0.0</pose>
+      <!-- <pose>0 0 0.2 0 0 -0.2</pose> -->
+      <pose>0 0 0.2 0 0 0.0</pose>
     </include>
 
     <!-- includeing the car body -->

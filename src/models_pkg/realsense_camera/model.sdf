@@ -93,8 +93,8 @@
           <robotNamespace/>
           <topicName>/camera/imu</topicName>
           <bodyName>imu_link</bodyName>
-          <updateRateHZ>100.0</updateRateHZ>
-          <gaussianNoise>0.0</gaussianNoise>
+          <updateRateHZ>200.0</updateRateHZ>
+          <gaussianNoise>0.05</gaussianNoise>
           <xyzOffset>0 0 0</xyzOffset>
           <rpyOffset>0 0 0</rpyOffset>
           <frameName>imu_link</frameName>
