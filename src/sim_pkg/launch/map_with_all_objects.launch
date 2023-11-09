@@ -9,7 +9,7 @@
     <arg name="gui"          value="true"/>
   </include>
 
-  <node pkg="sim_pkg" type="delay.sh" args="5 sim_pkg car.launch"                 name="car"                  output="screen"/>
+  <node pkg="sim_pkg" type="delay.sh" args="5 sim_pkg cardepth.launch"                 name="car"                  output="screen"/>
   <node pkg="sim_pkg" type="delay.sh" args="5 sim_pkg enter_highway_signs.launch" name="enter_highway_signs"  output="screen"/>
   <node pkg="sim_pkg" type="delay.sh" args="5 sim_pkg leave_highway_signs.launch" name="leave_highway_signs"  output="screen"/>
   <node pkg="sim_pkg" type="delay.sh" args="5 sim_pkg prohibited_signs.launch"    name="prohibited_signs"     output="screen"/>
@@ -21,7 +21,7 @@
   <node pkg="sim_pkg" type="delay.sh" args="5 sim_pkg roundabout_signs.launch"    name="roundabout_signs"     output="screen"/>
   <node pkg="sim_pkg" type="delay.sh" args="5 sim_pkg stop_signs.launch"          name="stop_signs"           output="screen"/>
   <node pkg="sim_pkg" type="delay.sh" args="5 sim_pkg obstacle_car.launch"        name="obstacle_car"         output="screen"/>
-  <!-- <node pkg="sim_pkg" type="delay.sh" args="5 sim_pkg members.launch"             name="members"              output="screen"/> -->
+  <node pkg="sim_pkg" type="delay.sh" args="5 sim_pkg members.launch"             name="members"              output="screen"/>
   <node pkg="sim_pkg" type="delay.sh" args="5 sim_pkg ramp.launch"                name="ramp"                 output="screen"/>
   <node pkg="sim_pkg" type="delay.sh" args="5 sim_pkg roadblock.launch"           name="roadblock"            output="screen"/>
   <node pkg="sim_pkg" type="delay.sh" args="5 sim_pkg traffic_lights.launch"      name="traffic_lights"       output="screen"/>
