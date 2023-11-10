@@ -2,6 +2,7 @@
  
   <launch>
  
+    <rosparam command="load" file="$(find control)/config/gps_config.yaml" />
     <node
           name  = "automobile"
     	    pkg   = "gazebo_ros"

@@ -9,6 +9,10 @@
 #include "ros/ros.h"
 #include "utils/localisation.h"
 
+#include <fstream>
+#include <string>
+#include <sstream>
+
 namespace gazebo
 {
     namespace gps
@@ -16,6 +20,8 @@ namespace gazebo
         class GPS: public ModelPlugin
     	{
         private: 
+            double rate;
+            double m_random_noise;
             physics::ModelPtr                   m_model;
             ros::NodeHandlePtr		  nh;
             ros::Timer				  timer;
@@ -33,7 +39,8 @@ namespace gazebo
         // Default constructor
         public: GPS();
         public: void Load(physics::ModelPtr, sdf::ElementPtr);
-        public: void OnUpdate();        
+        public: void OnUpdate();
+        public: void ReadConfig(const std::string &filename);        
         };
     };    
 };

@@ -7,12 +7,16 @@ namespace gazebo
 {
     namespace gps
     {   
-        GPS::GPS():ModelPlugin() {}
+        GPS::GPS():ModelPlugin() {
+          
+        }
      		
         void GPS::Load(physics::ModelPtr model_ptr, sdf::ElementPtr sdf_ptr)
         {
           nh = boost::make_shared<ros::NodeHandle>();
-          timer = nh->createTimer(ros::Duration(0.01), std::bind(&GPS::OnUpdate, this));
+          nh->getParam("/rate", this->rate);
+          nh->getParam("/max_noise", this->m_random_noise);
+          timer = nh->createTimer(ros::Duration(1/this->rate), std::bind(&GPS::OnUpdate, this));
 
   			  // Save a pointer to the model for later use
   			  this->m_model = model_ptr;
@@ -48,8 +52,8 @@ namespace gazebo
         {
             this->m_gps_pose.header.stamp = ros::Time::now();
 		        this->m_gps_pose.timestamp  = this->m_model->GetWorld()->SimTime().Float();
-           	this->m_gps_pose.posA   = this->m_model->RelativePose().Pos().X() + (rand() / (float)RAND_MAX * 0.2) - 0.1;
-           	this->m_gps_pose.posB   = abs(this->m_model->RelativePose().Pos().Y()) + (rand() / (float)RAND_MAX * 0.2) - 0.1;
+           	this->m_gps_pose.posA   = this->m_model->RelativePose().Pos().X() + (rand() / (float)RAND_MAX * this->m_random_noise) - this->m_random_noise/2;
+           	this->m_gps_pose.posB   = abs(this->m_model->RelativePose().Pos().Y()) + (rand() / (float)RAND_MAX * this->m_random_noise) - this->m_random_noise/2;
            	this->m_gps_pose.rotA   = this->m_model->RelativePose().Rot().Yaw();
            	this->m_gps_pose.rotB   = this->m_model->RelativePose().Rot().Yaw();
                this->m_pubGPS.publish(this->m_gps_pose);
