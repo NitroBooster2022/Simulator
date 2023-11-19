@@ -13,6 +13,9 @@
 #include <string>
 #include <sstream>
 
+#include <queue>
+#include <vector>
+
 namespace gazebo
 {
     namespace gps
@@ -25,6 +28,7 @@ namespace gazebo
             physics::ModelPtr                   m_model;
             ros::NodeHandlePtr		  nh;
             ros::Timer				  timer;
+            std::queue<utils::localisation> data_queue;
 
 	    /** ROS INTEGRATION **/
             // A node use for ROS transport
@@ -35,6 +39,7 @@ namespace gazebo
 
             // The gps message
             utils::localisation            m_gps_pose;
+            utils::localisation            current_pose;
             
         // Default constructor
         public: GPS();

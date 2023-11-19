@@ -62,7 +62,7 @@ namespace gazebo
             std::normal_distribution<double> distribution(0.0, 1.0);  // mean=0, standard deviation=1
 
             this->m_imu_msg.header.stamp = ros::Time::now();
-            this->m_imu_msg.header.frame_id = "imu0";
+            this->m_imu_msg.header.frame_id = "chassis";
 
             // orientation
             this->m_imu_msg.orientation.x = this->m_model->RelativePose().Rot().X() ;//+ 0.05 * distribution(generator);  // Added Gaussian noise
