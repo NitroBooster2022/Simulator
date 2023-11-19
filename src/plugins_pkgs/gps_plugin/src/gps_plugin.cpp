@@ -1,6 +1,6 @@
 
 #include "gps_plugin.hpp"
-
+#include <cmath>
 #define DEBUG false
 
 namespace gazebo
@@ -16,7 +16,19 @@ namespace gazebo
           nh = boost::make_shared<ros::NodeHandle>();
           nh->getParam("/rate", this->rate);
           nh->getParam("/max_noise", this->m_random_noise);
+          double delay;
+          nh->getParam("/gps_delay", delay);
           timer = nh->createTimer(ros::Duration(1/this->rate), std::bind(&GPS::OnUpdate, this));
+          
+          int init_size = std::round(delay * this->rate);
+          for (int hsy=0; hsy<init_size; hsy++) {
+            utils::localisation dummy;
+            dummy.header.stamp = ros::Time::now();
+            dummy.posA = 100.0;
+            dummy.posB = 100.0;
+            this->data_queue.push(dummy);
+          }
+          std::cout << "GPS Queue size: " << this->data_queue.size() << std::endl;
 
   			  // Save a pointer to the model for later use
   			  this->m_model = model_ptr;
@@ -56,7 +68,15 @@ namespace gazebo
            	this->m_gps_pose.posB   = abs(this->m_model->RelativePose().Pos().Y()) + (rand() / (float)RAND_MAX * this->m_random_noise) - this->m_random_noise/2;
            	this->m_gps_pose.rotA   = this->m_model->RelativePose().Rot().Yaw();
            	this->m_gps_pose.rotB   = this->m_model->RelativePose().Rot().Yaw();
-               this->m_pubGPS.publish(this->m_gps_pose);
+
+            this->data_queue.push(this->m_gps_pose);
+            utils::localisation* current = &this->data_queue.front();
+            if (current->posA < 99.0) {
+              this->m_pubGPS.publish(*current);
+            } else {
+              std::cout << "dummy found, queue size: " << this->data_queue.size() << std::endl;
+            }
+            this->data_queue.pop();
         };      
     }; //namespace trafficLight
     GZ_REGISTER_MODEL_PLUGIN(gps::GPS)
