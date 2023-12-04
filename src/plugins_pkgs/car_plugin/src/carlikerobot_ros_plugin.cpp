@@ -27,7 +27,7 @@ namespace gazebo
 
             this->_rosNode.reset(new ::ros::NodeHandle("/serialNODEvirt"));
 
-            this->_commandSubscriber = this->_rosNode->subscribe(topicName, 1, &CMessageHandler::OnMsgCommand, this);
+            this->_commandSubscriber = this->_rosNode->subscribe(topicName, 4, &CMessageHandler::OnMsgCommand, this);
 
             // Feedback message
 			this->_feedbackPublisher = this->_rosNode->advertise<std_msgs::String>(listen_topicName, 2);
