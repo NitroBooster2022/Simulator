@@ -7,7 +7,7 @@
         <geometry>
           <plane>
             <normal>0 0 1</normal>
-	    <size>14.68000 14.99000</size>
+	    <size>20.696 13.786</size>
           </plane>
         </geometry>
         <surface>
@@ -29,7 +29,7 @@
         <geometry>
           <plane>
             <normal>0 0 1</normal>
-	          <size>14.68000 14.99000</size>
+	          <size>20.696 13.786</size>
           </plane>
         </geometry>
         <material>

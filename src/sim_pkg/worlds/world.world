@@ -65,7 +65,8 @@
 		<include>
 			<scale> 1 1 1 </scale>
 			<uri>model://track</uri>
-			<pose> 7.340 -7.495 </pose>
+			<!-- <pose> 7.340 -7.495 </pose> -->
+			<pose> 50.0 0.0 </pose>
 	  	</include>
 
 	</world>
