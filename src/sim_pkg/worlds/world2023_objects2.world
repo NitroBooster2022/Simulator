@@ -80,7 +80,7 @@
           <geometry>
             <plane>
               <normal>0 0 1</normal>
-              <size>20.696 13.786</size>
+              <size>20.541 13.656</size>
             </plane>
           </geometry>
           <surface>
@@ -107,7 +107,7 @@
           <geometry>
             <plane>
               <normal>0 0 1</normal>
-              <size>20.696 13.786</size>
+              <size>20.541 13.656</size>
             </plane>
           </geometry>
           <material>
@@ -126,7 +126,7 @@
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
-      <pose>10.348 6.893 0 0 -0 0</pose>
+      <pose>10.2706 6.893 0 0 -0 0</pose>
     </model>
     <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
     <atmosphere type='adiabatic'/>
@@ -153,7 +153,7 @@
     </spherical_coordinates>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>15.2481 -19.5825 15.9415 0 0.761803 1.80663</pose>
+        <pose>7.58362 7.6018 2.99036 0 0.641803 -3.06858</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
@@ -4610,133 +4610,133 @@
       <pose>2.103 -14.004 0.079 0 -0 0</pose>
     </model>
     <state world_name='bfmc_official'>
-      <sim_time>2814 76000000</sim_time>
-      <real_time>2789 283443211</real_time>
-      <wall_time>1701893444 863173990</wall_time>
-      <iterations>2754482</iterations>
+      <sim_time>3196 391000000</sim_time>
+      <real_time>125 131256044</real_time>
+      <wall_time>1703019467 218843069</wall_time>
+      <iterations>124578</iterations>
       <model name='CWALK_M'>
-        <pose>8.22901 0.415026 0.078998 0 0 -0.016495</pose>
+        <pose>6.777 -1.456 0.078998 0 -0 3.14159</pose>
         <scale>1 1 1</scale>
         <link name='rectangular_support'>
-          <pose>8.22902 0.415704 0.177938 0 -0 3.1251</pose>
+          <pose>6.777 -1.45668 0.177938 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='sign_leg'>
-          <pose>8.23119 0.414308 0.002938 0 0 -0.016495</pose>
+          <pose>6.77481 -1.45532 0.002938 0 -0 3.14159</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='CWALK_M_clone'>
-        <pose>17.5736 2.26272 0.078998 0 -0 1.54939</pose>
+        <pose>17.5736 2.26272 0.078998 0 0 -0.016495</pose>
         <scale>1 1 1</scale>
         <link name='rectangular_support'>
-          <pose>17.5729 2.26274 0.177938 0 -0 -1.5922</pose>
+          <pose>17.5736 2.26339 0.177938 0 -0 3.1251</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='sign_leg'>
-          <pose>17.5743 2.2649 0.002938 0 -0 1.54939</pose>
+          <pose>17.5758 2.262 0.002938 0 0 -0.016495</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='CWALK_M_clone_0'>
-        <pose>15.1695 2.94233 0.078998 0 0 -1.52584</pose>
+        <pose>15.2167 2.91729 0.078998 0 0 -0.016495</pose>
         <scale>1 1 1</scale>
         <link name='rectangular_support'>
-          <pose>15.1701 2.94236 0.177938 0 -0 1.61574</pose>
+          <pose>15.2167 2.91791 0.177938 0 -0 3.12508</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='sign_leg'>
-          <pose>15.1689 2.94011 0.002938 0 0 -1.52584</pose>
+          <pose>15.2189 2.91657 0.002938 0 0 -0.016495</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='CWALK_M_clone_0_clone'>
-        <pose>9.67234 4.27003 0.078998 0 0 -3.11853</pose>
+        <pose>9.67073 4.33983 0.078998 0 0 -1.52584</pose>
         <scale>1 1 1</scale>
         <link name='rectangular_support'>
-          <pose>9.67235 4.26935 0.177938 0 -0 0.023061</pose>
+          <pose>9.67142 4.33986 0.177938 0 -0 1.61575</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='sign_leg'>
-          <pose>9.67013 4.27067 0.002938 0 0 -3.11853</pose>
+          <pose>9.67015 4.33761 0.002938 0 0 -1.52584</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='CWALK_M_clone_0_clone_0'>
-        <pose>9.02401 3.36927 0.078998 0 -0 0.06294</pose>
+        <pose>9.02401 3.36927 0.078998 0 0 -1.52584</pose>
         <scale>1 1 1</scale>
         <link name='rectangular_support'>
-          <pose>9.02397 3.36995 0.177938 0 -0 -3.07866</pose>
+          <pose>9.02469 3.3693 0.177938 0 -0 1.61574</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='sign_leg'>
-          <pose>9.02624 3.36873 0.002938 0 -0 0.06294</pose>
+          <pose>9.02343 3.36705 0.002938 0 0 -1.52584</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='CWALK_M_clone_1'>
-        <pose>5.4472 7.42782 0.078998 0 -0 1.68353</pose>
+        <pose>5.4472 7.42782 0.078998 0 0 -0.016495</pose>
         <scale>1 1 1</scale>
         <link name='rectangular_support'>
-          <pose>5.44652 7.42774 0.177938 0 -0 -1.45807</pose>
+          <pose>5.4472 7.4285 0.177938 0 -0 3.12509</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='sign_leg'>
-          <pose>5.44763 7.43008 0.002938 0 -0 1.68353</pose>
+          <pose>5.44938 7.4271 0.002938 0 0 -0.016495</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='CWALK_M_clone_2'>
-        <pose>4.57009 7.97806 0.078998 0 0 -1.56272</pose>
+        <pose>4.57009 7.97806 0.078998 0 0 -0.016495</pose>
         <scale>1 1 1</scale>
         <link name='rectangular_support'>
-          <pose>4.57077 7.97806 0.177938 0 -0 1.57887</pose>
+          <pose>4.5701 7.97874 0.177938 0 -0 3.12509</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='sign_leg'>
-          <pose>4.56943 7.97586 0.002938 0 0 -1.56272</pose>
+          <pose>4.57227 7.97734 0.002938 0 0 -0.016495</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='CWALK_M_clone_3'>
-        <pose>1.76809 10.3316 0.078998 0 0 -3.01621</pose>
+        <pose>1.76809 10.3316 0.078998 0 0 -0.016495</pose>
         <scale>1 1 1</scale>
         <link name='rectangular_support'>
-          <pose>1.76818 10.3309 0.177938 0 -0 0.125384</pose>
+          <pose>1.7681 10.3323 0.177938 0 -0 3.1251</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='sign_leg'>
-          <pose>1.76583 10.332 0.002938 0 0 -3.01621</pose>
+          <pose>1.77027 10.3309 0.002938 0 0 -0.016495</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -4759,16 +4759,16 @@
         </link>
       </model>
       <model name='EHIGH_Y_clone'>
-        <pose>6.42776 11.6467 0.078998 0 -0 -3.11465</pose>
+        <pose>6.44637 12.4346 0.078998 0 -0 1.5708</pose>
         <scale>1 1 1</scale>
         <link name='rectangular_support'>
-          <pose>6.42576 11.6467 0.177938 0 -0 0.026938</pose>
+          <pose>6.44645 12.4366 0.177938 0 -0 -1.5708</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='sign_leg'>
-          <pose>6.42555 11.6473 0.002938 0 -0 -3.11465</pose>
+          <pose>6.44705 12.4368 0.002938 0 -0 1.5708</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -4784,55 +4784,55 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='triangular_support'>
-          <pose>17.3043 11.1161 0.177938 0 -0 -5e-06</pose>
+          <pose>17.3043 11.1161 0.177938 0 0 -5e-06</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='GIR_S_clone_0'>
-        <pose>15.7445 11.742 0.078998 0 -0 -1.52948</pose>
+        <pose>15.7445 11.742 0.078998 0 -0 3.14159</pose>
         <scale>1 1 1</scale>
         <link name='sign_leg'>
-          <pose>15.7439 11.7398 0.002938 0 -0 -1.52948</pose>
+          <pose>15.7423 11.7427 0.002938 0 -0 3.14159</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='triangular_support'>
-          <pose>15.7451 11.7442 0.177938 0 -0 1.61211</pose>
+          <pose>15.7467 11.7413 0.177938 0 -0 -5e-06</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='GIR_S_clone_1'>
-        <pose>15.126 10.2264 0.078998 0 -0 -0.013638</pose>
+        <pose>15.126 10.2264 0.078998 0 -0 3.14159</pose>
         <scale>1 1 1</scale>
         <link name='sign_leg'>
-          <pose>15.1282 10.2257 0.002938 0 -0 -0.013638</pose>
+          <pose>15.1238 10.2271 0.002938 0 -0 3.14159</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='triangular_support'>
-          <pose>15.1238 10.2271 0.177938 0 -0 3.12795</pose>
+          <pose>15.1282 10.2257 0.177938 0 -0 -7e-06</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='GIR_S_clone_2'>
-        <pose>16.6425 9.59879 0.078998 0 -0 1.63117</pose>
+        <pose>16.6425 9.59879 0.078998 0 -0 3.14159</pose>
         <scale>1 1 1</scale>
         <link name='sign_leg'>
-          <pose>16.643 9.60102 0.002938 0 -0 1.63117</pose>
+          <pose>16.6403 9.59947 0.002938 0 -0 3.14159</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='triangular_support'>
-          <pose>16.642 9.59656 0.177938 0 -0 -1.51043</pose>
+          <pose>16.6447 9.59821 0.177938 0 0 -1e-05</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -4842,7 +4842,7 @@
         <pose>8.458 -14.359 0.078998 0 -0 3.13319</pose>
         <scale>1 1 1</scale>
         <link name='rectangular_support'>
-          <pose>8.458 -14.359 0.177938 0 -0 -0.008405</pose>
+          <pose>8.458 -14.359 0.177938 0 0 -0.008405</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -4871,32 +4871,32 @@
         </link>
       </model>
       <model name='LHIGH_Z_clone_0'>
-        <pose>16.4607 17.5622 0.078998 0 -0 3.09181</pose>
+        <pose>13.6574 9.70106 0.078998 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='rectangular_support'>
-          <pose>16.4607 17.5622 0.177938 0 -0 -0.049782</pose>
+          <pose>13.6575 9.70097 0.177938 0 0 -3.14159</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='sign_leg'>
-          <pose>16.4586 17.5629 0.002938 0 -0 3.09181</pose>
+          <pose>13.6596 9.70038 0.002938 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='LHIGH_Z_clone_clone'>
-        <pose>13.7417 9.76213 0.078998 0 -0 3.10645</pose>
+        <pose>13.7417 9.76213 0.078998 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='rectangular_support'>
-          <pose>13.7417 9.76213 0.177938 0 0 -0.035141</pose>
+          <pose>13.7417 9.76213 0.177938 0 0 -3.14159</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='sign_leg'>
-          <pose>13.7395 9.76289 0.002938 0 -0 3.10645</pose>
+          <pose>13.7439 9.76145 0.002938 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -4919,32 +4919,32 @@
         </link>
       </model>
       <model name='ONEWAY_J_clone'>
-        <pose>5.31054 0.456064 0.078998 0 -0 0.112102</pose>
+        <pose>5.31054 0.456064 0.078998 0 -0 1.5708</pose>
         <scale>1 1 1</scale>
         <link name='rectangular_support'>
-          <pose>5.31054 0.456064 0.177938 0 -0 -3.02949</pose>
+          <pose>5.31054 0.45606 0.177938 0 0 -1.57079</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='sign_leg'>
-          <pose>5.3128 0.455632 0.002938 0 -0 0.112102</pose>
+          <pose>5.31122 0.458257 0.002938 0 -0 1.5708</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='ONEWAY_J_clone_0'>
-        <pose>6.946 0.44031 0.078998 0 -0 0.024466</pose>
+        <pose>6.946 0.44031 0.078998 0 -0 1.5708</pose>
         <scale>1 1 1</scale>
         <link name='rectangular_support'>
-          <pose>6.946 0.44031 0.177938 0 -0 -3.11713</pose>
+          <pose>6.946 0.440309 0.177938 0 0 -1.5708</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='sign_leg'>
-          <pose>6.94821 0.439682 0.002938 0 -0 0.024466</pose>
+          <pose>6.94668 0.442503 0.002938 0 -0 1.5708</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -4954,7 +4954,7 @@
         <pose>6.94294 1.14915 0.078998 0 -0 1.5708</pose>
         <scale>1 1 1</scale>
         <link name='rectangular_support'>
-          <pose>6.94294 1.14915 0.177938 0 -0 -1.57079</pose>
+          <pose>6.94294 1.14915 0.177938 0 0 -1.57079</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -4967,16 +4967,16 @@
         </link>
       </model>
       <model name='ONEWAY_J_clone_2'>
-        <pose>16.0051 0.405856 0.078998 0 -0 0.103946</pose>
+        <pose>16.0051 0.405856 0.078998 0 -0 1.5708</pose>
         <scale>1 1 1</scale>
         <link name='rectangular_support'>
-          <pose>16.0051 0.405856 0.177938 0 -0 -3.03765</pose>
+          <pose>16.0051 0.405808 0.177938 0 0 -1.5708</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='sign_leg'>
-          <pose>16.0074 0.405405 0.002938 0 -0 0.103946</pose>
+          <pose>16.0058 0.408049 0.002938 0 -0 1.5708</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -4986,7 +4986,7 @@
         <pose>7.32986 5.82096 0.078998 0 -0 1.5708</pose>
         <scale>1 1 1</scale>
         <link name='rectangular_support'>
-          <pose>7.32986 5.82096 0.177938 0 -0 -1.57079</pose>
+          <pose>7.32986 5.82096 0.177938 0 0 -1.57079</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -4999,32 +4999,32 @@
         </link>
       </model>
       <model name='PRIOR_I_clone'>
-        <pose>5.44232 3.03915 0.078998 0 -0 1.61235</pose>
+        <pose>5.44232 3.03915 0.078998 0 0 -1.5708</pose>
         <scale>1 1 1</scale>
         <link name='caro_support'>
-          <pose>5.44173 3.03693 0.177938 0 0 -1.52924</pose>
+          <pose>5.443 3.04134 0.177938 0 -0 1.57079</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='sign_leg'>
-          <pose>5.44291 3.04137 0.002938 0 -0 1.61235</pose>
+          <pose>5.44164 3.03696 0.002938 0 0 -1.5708</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='PRIOR_I_clone_clone'>
-        <pose>4.54578 1.64426 0.078998 0 -0 -1.66154</pose>
+        <pose>4.54578 1.64426 0.078998 0 -0 1.61235</pose>
         <scale>1 1 1</scale>
         <link name='caro_support'>
-          <pose>4.54666 1.64638 0.177938 0 -0 1.48005</pose>
+          <pose>4.54519 1.64204 0.177938 0 -0 -1.52924</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='sign_leg'>
-          <pose>4.5449 1.64214 0.002938 0 -0 -1.66154</pose>
+          <pose>4.54637 1.64648 0.002938 0 -0 1.61235</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -5034,7 +5034,7 @@
         <pose>3.15047 2.99014 0.078998 0 -0 1.61235</pose>
         <scale>1 1 1</scale>
         <link name='caro_support'>
-          <pose>3.14988 2.98792 0.177938 0 -0 -1.52924</pose>
+          <pose>3.14988 2.98792 0.177938 0 0 -1.52924</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -5050,7 +5050,7 @@
         <pose>1.02178 5.99387 0.078998 0 -0 1.61235</pose>
         <scale>1 1 1</scale>
         <link name='caro_support'>
-          <pose>1.02119 5.99165 0.177938 0 -0 -1.52924</pose>
+          <pose>1.02119 5.99165 0.177938 0 0 -1.52924</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -5063,48 +5063,32 @@
         </link>
       </model>
       <model name='PRIOR_I_clone_clone_0_clone_0'>
-        <pose>0.13431 4.55467 0.078998 0 -0 -1.63218</pose>
+        <pose>0.13431 4.55467 0.078998 0 -0 1.61235</pose>
         <scale>1 1 1</scale>
         <link name='caro_support'>
-          <pose>0.135125 4.55682 0.177938 0 -0 1.50941</pose>
+          <pose>0.133721 4.55244 0.177938 0 -0 -1.52924</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='sign_leg'>
-          <pose>0.133495 4.55252 0.002938 0 -0 -1.63218</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='PRIOR_I_clone_clone_0_clone_clone'>
-        <pose>1.43027 4.28773 0.078998 0 -0 -3.05502</pose>
-        <scale>1 1 1</scale>
-        <link name='caro_support'>
-          <pose>1.43251 4.28724 0.177938 0 -0 0.086567</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-        <link name='sign_leg'>
-          <pose>1.42802 4.28822 0.002938 0 -0 -3.05502</pose>
+          <pose>0.1349 4.55689 0.002938 0 -0 1.61235</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='PRIOR_I_clone_clone_0_clone_clone_0'>
-        <pose>3.53939 7.17315 0.078998 0 -0 3.11876</pose>
+        <pose>3.53939 7.17315 0.078998 0 -0 3.07601</pose>
         <scale>1 1 1</scale>
         <link name='caro_support'>
-          <pose>3.54157 7.17242 0.177938 0 -0 -0.022833</pose>
+          <pose>3.54153 7.17233 0.177938 0 0 -0.065583</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='sign_leg'>
-          <pose>3.53721 7.17388 0.002938 0 -0 3.11876</pose>
+          <pose>3.53725 7.17398 0.002938 0 -0 3.07601</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -5114,7 +5098,7 @@
         <pose>3.24866 5.99146 0.078998 0 -0 1.61235</pose>
         <scale>1 1 1</scale>
         <link name='caro_support'>
-          <pose>3.24807 5.98924 0.177938 0 -0 -1.52924</pose>
+          <pose>3.24807 5.98924 0.177938 0 0 -1.52924</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -5127,48 +5111,96 @@
         </link>
       </model>
       <model name='PRIOR_I_clone_clone_1'>
-        <pose>2.27692 1.649 0.078998 0 -0 -1.61403</pose>
+        <pose>2.27692 1.649 0.078998 0 -0 1.61235</pose>
         <scale>1 1 1</scale>
         <link name='caro_support'>
-          <pose>2.2777 1.65116 0.177938 0 -0 1.52756</pose>
+          <pose>2.27632 1.64678 0.177938 0 -0 -1.52924</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='sign_leg'>
-          <pose>2.27614 1.64684 0.002938 0 -0 -1.61403</pose>
+          <pose>2.27751 1.65122 0.002938 0 -0 1.61235</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='PRIOR_I_clone_clone_1_clone'>
+        <pose>2.29195 4.60319 0.078998 0 -0 1.61235</pose>
+        <scale>1 1 1</scale>
+        <link name='caro_support'>
+          <pose>2.29136 4.60097 0.177938 0 -0 -1.52924</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='sign_leg'>
+          <pose>2.29254 4.60541 0.002938 0 -0 1.61235</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='PRIOR_I_clone_clone_2'>
-        <pose>4.19127 0.464192 0.078998 0 -0 0.130539</pose>
+        <pose>4.19127 0.464192 0.078998 0 -0 1.61235</pose>
         <scale>1 1 1</scale>
         <link name='caro_support'>
-          <pose>4.18901 0.464583 0.177938 0 -0 -3.01106</pose>
+          <pose>4.19068 0.461979 0.177938 0 0 -1.52925</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='sign_leg'>
-          <pose>4.19353 0.463801 0.002938 0 -0 0.130539</pose>
+          <pose>4.19186 0.466411 0.002938 0 -0 1.61235</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='PRIOR_I_clone_clone_3'>
+        <pose>5.47916 5.99313 0.078998 0 -0 1.61235</pose>
+        <scale>1 1 1</scale>
+        <link name='caro_support'>
+          <pose>5.47857 5.99091 0.177938 0 -0 -1.52924</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='sign_leg'>
+          <pose>5.47975 5.99535 0.002938 0 -0 1.61235</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='PRIOR_I_clone_clone_clone'>
+        <pose>4.59142 4.62043 0.078998 0 0 -1.66154</pose>
+        <scale>1 1 1</scale>
+        <link name='caro_support'>
+          <pose>4.5923 4.62255 0.177938 0 -0 1.48005</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='sign_leg'>
+          <pose>4.59054 4.61831 0.002938 0 0 -1.66154</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='PRK_P4'>
-        <pose>9.06058 0.4394 0.078998 0 -0 0.059376</pose>
+        <pose>4.459 -1.452 0.078998 0 -0 3.14159</pose>
         <scale>1 1 1</scale>
         <link name='rectangular_support'>
-          <pose>9.05836 0.439947 0.177938 0 0 -3.08222</pose>
+          <pose>4.46118 -1.45268 0.177938 0 0 -6e-06</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='sign_leg'>
-          <pose>9.06281 0.438849 0.002938 0 -0 0.059376</pose>
+          <pose>4.45681 -1.45132 0.002938 0 -0 3.14159</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -5178,7 +5210,7 @@
         <pose>9.10012 0.910419 0.078998 0 -0 0.059376</pose>
         <scale>1 1 1</scale>
         <link name='rectangular_support'>
-          <pose>9.09789 0.91097 0.177938 0 -0 -3.08222</pose>
+          <pose>9.09789 0.91097 0.177938 0 0 -3.08222</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -5194,7 +5226,7 @@
         <pose>9.89715 0.902458 0.078998 0 -0 0.059376</pose>
         <scale>1 1 1</scale>
         <link name='rectangular_support'>
-          <pose>9.89492 0.903009 0.177938 0 -0 -3.08222</pose>
+          <pose>9.89492 0.903009 0.177938 0 0 -3.08222</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -5210,7 +5242,7 @@
         <pose>10.6923 0.901269 0.078998 0 -0 0.059376</pose>
         <scale>1 1 1</scale>
         <link name='rectangular_support'>
-          <pose>10.6901 0.90182 0.177938 0 -0 -3.08222</pose>
+          <pose>10.6901 0.90182 0.177938 0 0 -3.08222</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -5226,7 +5258,7 @@
         <pose>9.90815 0.511288 0.078998 0 -0 0.059376</pose>
         <scale>1 1 1</scale>
         <link name='rectangular_support'>
-          <pose>9.90592 0.511839 0.177938 0 -0 -3.08222</pose>
+          <pose>9.90592 0.511839 0.177938 0 0 -3.08222</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -5242,7 +5274,7 @@
         <pose>10.6995 0.503066 0.078998 0 -0 0.059376</pose>
         <scale>1 1 1</scale>
         <link name='rectangular_support'>
-          <pose>10.6973 0.503617 0.177938 0 -0 -3.08222</pose>
+          <pose>10.6973 0.503617 0.177938 0 0 -3.08222</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -5258,7 +5290,7 @@
         <pose>11.4825 0.498265 0.078998 0 -0 0.059376</pose>
         <scale>1 1 1</scale>
         <link name='rectangular_support'>
-          <pose>11.4803 0.498816 0.177938 0 -0 -3.08222</pose>
+          <pose>11.4803 0.498816 0.177938 0 0 -3.08222</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -5274,7 +5306,7 @@
         <pose>11.4863 0.878924 0.078998 0 -0 0.059376</pose>
         <scale>1 1 1</scale>
         <link name='rectangular_support'>
-          <pose>11.4841 0.879475 0.177938 0 -0 -3.08222</pose>
+          <pose>11.4841 0.879475 0.177938 0 0 -3.08222</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -5290,7 +5322,7 @@
         <pose>12.276 0.497026 0.078998 0 -0 0.059376</pose>
         <scale>1 1 1</scale>
         <link name='rectangular_support'>
-          <pose>12.2738 0.497577 0.177938 0 -0 -3.08222</pose>
+          <pose>12.2738 0.497577 0.177938 0 0 -3.08222</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -5306,7 +5338,7 @@
         <pose>12.2813 0.890814 0.078998 0 -0 0.059376</pose>
         <scale>1 1 1</scale>
         <link name='rectangular_support'>
-          <pose>12.2791 0.891365 0.177938 0 -0 -3.08222</pose>
+          <pose>12.2791 0.891365 0.177938 0 0 -3.08222</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -5319,10 +5351,10 @@
         </link>
       </model>
       <model name='RAMP_clone'>
-        <pose>4.36263 12.0781 0 0 -0 -3.13698</pose>
+        <pose>4.38626 12.1243 0 0 -0 1.56965</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
-          <pose>4.36263 12.0781 0 0 -0 -3.13698</pose>
+          <pose>4.38626 12.1243 0 0 -0 1.56965</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -5348,7 +5380,7 @@
         <pose>3.47037 4.33239 0.078998 0 -0 3.14159</pose>
         <scale>1 1 1</scale>
         <link name='octagonal_support'>
-          <pose>3.47256 4.33171 0.177938 0 -0 -5e-06</pose>
+          <pose>3.47256 4.33171 0.177938 0 0 -5e-06</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -5361,64 +5393,64 @@
         </link>
       </model>
       <model name='STOP_I_clone_0'>
-        <pose>1.00348 3.04732 0.078998 0 -0 1.53451</pose>
+        <pose>1.06235 3.0705 0.078998 0 -0 1.53451</pose>
         <scale>1 1 1</scale>
         <link name='octagonal_support'>
-          <pose>1.00272 3.04515 0.177938 0 -0 -1.60709</pose>
+          <pose>1.06159 3.06833 0.177938 0 0 -1.60709</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='sign_leg'>
-          <pose>1.00424 3.04949 0.002938 0 -0 1.53451</pose>
+          <pose>1.06311 3.07267 0.002938 0 -0 1.53451</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='STOP_I_clone_1'>
-        <pose>2.02972 6.26135 0.078998 0 -0 -0.007385</pose>
+        <pose>1.37246 7.18205 0.078998 0 -0 3.14159</pose>
         <scale>1 1 1</scale>
         <link name='octagonal_support'>
-          <pose>2.02753 6.26205 0.177938 0 -0 3.13421</pose>
+          <pose>1.37466 7.18136 0.177938 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='sign_leg'>
-          <pose>2.03191 6.26065 0.002938 0 -0 -0.007385</pose>
+          <pose>1.37027 7.18273 0.002938 0 -0 3.14159</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='STOP_I_clone_1_clone'>
-        <pose>0.106874 10.6053 0.078998 0 0 -1.74334</pose>
+        <pose>0.106874 10.6053 0.078998 0 0 -0.007385</pose>
         <scale>1 1 1</scale>
         <link name='octagonal_support'>
-          <pose>0.107922 10.6073 0.177938 0 -0 1.39826</pose>
+          <pose>0.104772 10.606 0.177938 0 -0 3.13422</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='sign_leg'>
-          <pose>0.105826 10.6033 0.002938 0 0 -1.74334</pose>
+          <pose>0.109062 10.6046 0.002938 0 0 -0.007385</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='STOP_I_clone_1_clone_0'>
-        <pose>1.40874 7.27443 0.078998 0 -0 2.95421</pose>
+        <pose>1.97603 6.32075 0.078998 0 0 -0.007385</pose>
         <scale>1 1 1</scale>
         <link name='octagonal_support'>
-          <pose>1.41077 7.27335 0.177938 0 -0 -0.187386</pose>
+          <pose>1.97384 6.32145 0.177938 0 -0 3.1342</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='sign_leg'>
-          <pose>1.40671 7.27551 0.002938 0 -0 2.95421</pose>
+          <pose>1.97822 6.32005 0.002938 0 0 -0.007385</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -5456,6 +5488,38 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
+      <model name='STOP_I_clone_1_clone_3'>
+        <pose>4.24298 6.31284 0.078998 0 0 -0.007385</pose>
+        <scale>1 1 1</scale>
+        <link name='octagonal_support'>
+          <pose>4.24079 6.31354 0.177938 0 -0 3.13421</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='sign_leg'>
+          <pose>4.24517 6.31214 0.002938 0 0 -0.007385</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='STOP_I_clone_clone'>
+        <pose>1.36315 4.2778 0.078998 0 -0 3.14159</pose>
+        <scale>1 1 1</scale>
+        <link name='octagonal_support'>
+          <pose>1.36534 4.27712 0.177938 0 -0 -5e-06</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='sign_leg'>
+          <pose>1.36096 4.27848 0.002938 0 -0 3.14159</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
       <model name='master_clone'>
         <pose>4.19146 3.36163 0 0 -0 3.14159</pose>
         <scale>1 1 1</scale>
@@ -5485,28 +5549,28 @@
         </link>
       </model>
       <model name='master_clone_0'>
-        <pose>5.76212 4.291 -0.032336 0 -0 -0.034506</pose>
+        <pose>5.76212 4.291 0 0 -0 3.14159</pose>
         <scale>1 1 1</scale>
         <link name='case'>
-          <pose>5.71354 4.29483 -0.032336 0 -0 -0.034506</pose>
+          <pose>5.8108 4.28884 0 0 -0 3.14159</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='green_lens'>
-          <pose>5.74343 4.29093 0.058684 0 -0 -0.034506</pose>
+          <pose>5.78079 4.29171 0.09102 0 -0 3.14159</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='red_lens'>
-          <pose>5.74343 4.29093 0.177884 0 -0 -0.034506</pose>
+          <pose>5.78079 4.29171 0.21022 0 -0 3.14159</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='yellow_lens'>
-          <pose>5.74343 4.29093 0.117664 0 -0 -0.034506</pose>
+          <pose>5.78079 4.29171 0.15 0 -0 3.14159</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -5541,132 +5605,132 @@
         </link>
       </model>
       <model name='master_clone_clone'>
-        <pose>3.45132 1.34645 0 0 -0 0.001703</pose>
+        <pose>3.45132 1.34645 0 0 -0 3.14159</pose>
         <scale>1 1 1</scale>
         <link name='case'>
-          <pose>3.40264 1.34852 0 0 -0 0.001703</pose>
+          <pose>3.5 1.34429 0 0 -0 3.14159</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='green_lens'>
-          <pose>3.43264 1.3457 0.09102 0 -0 0.001703</pose>
+          <pose>3.47001 1.34716 0.09102 0 -0 3.14159</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='red_lens'>
-          <pose>3.43264 1.3457 0.21022 0 -0 0.001703</pose>
+          <pose>3.47001 1.34716 0.21022 0 -0 3.14159</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='yellow_lens'>
-          <pose>3.43264 1.3457 0.15 0 -0 0.001703</pose>
+          <pose>3.47001 1.34716 0.15 0 -0 3.14159</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='obstacle_rcCar_1'>
-        <pose>15.7952 6.42496 0.032939 0 -0 1.567</pose>
+        <pose>15.7926 6.38118 0.032939 0 -0 1.567</pose>
         <scale>1 1 1</scale>
         <link name='car_body::link'>
-          <pose>15.7951 6.40096 0.004939 0 -0 1.567</pose>
+          <pose>15.7925 6.35718 0.004939 0 -0 1.567</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='chassis::link'>
-          <pose>15.7952 6.42496 0.032939 0 -0 3.1378</pose>
+          <pose>15.7926 6.38118 0.032939 0 -0 3.1378</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='steer_left::link_steer'>
-          <pose>15.7231 6.53724 0.032939 1.5708 0 1.567</pose>
+          <pose>15.7205 6.49346 0.032939 1.5708 0 1.567</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='steer_right::link_steer'>
-          <pose>15.8681 6.53669 0.032939 1.5708 0 1.567</pose>
+          <pose>15.8655 6.49291 0.032939 1.5708 0 1.567</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='wheel_front_left::link_rim'>
-          <pose>15.7146 6.54327 0.032939 1.5708 0 1.567</pose>
+          <pose>15.712 6.49949 0.032939 1.5708 0 1.567</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='wheel_front_right::link_rim'>
-          <pose>15.8766 6.54266 0.032939 1.5708 0 1.567</pose>
+          <pose>15.874 6.49888 0.032939 1.5708 0 1.567</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='wheel_rear_left::link_rim'>
-          <pose>15.7136 6.27327 0.032939 1.5708 0 1.567</pose>
+          <pose>15.711 6.22949 0.032939 1.5708 0 1.567</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='wheel_rear_right::link_rim'>
-          <pose>15.8756 6.27266 0.032939 1.5708 0 1.567</pose>
+          <pose>15.873 6.22888 0.032939 1.5708 0 1.567</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='obstacle_rcCar_2'>
-        <pose>9.53055 1.04426 0.032939 0 -0 3.137</pose>
+        <pose>3.999 -1.376 0.032939 0 -0 3.137</pose>
         <scale>1 1 1</scale>
         <link name='car_body::link'>
-          <pose>9.55455 1.04415 0.004939 0 -0 3.137</pose>
+          <pose>4.023 -1.37611 0.004939 0 -0 3.137</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='chassis::link'>
-          <pose>9.53055 1.04426 0.032939 0 0 -1.57539</pose>
+          <pose>3.999 -1.376 0.032939 0 -0 -1.57539</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='steer_left::link_steer'>
-          <pose>9.41822 0.972274 0.032939 1.5708 -0 3.137</pose>
+          <pose>3.88667 -1.44799 0.032939 1.5708 -0 3.137</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='steer_right::link_steer'>
-          <pose>9.41889 1.11727 0.032939 1.5708 -0 3.137</pose>
+          <pose>3.88734 -1.30299 0.032939 1.5708 -0 3.137</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='wheel_front_left::link_rim'>
-          <pose>9.41218 0.963804 0.032939 1.5708 -0 3.137</pose>
+          <pose>3.88063 -1.45646 0.032939 1.5708 -0 3.137</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='wheel_front_right::link_rim'>
-          <pose>9.41293 1.1258 0.032939 1.5708 -0 3.137</pose>
+          <pose>3.88138 -1.29446 0.032939 1.5708 -0 3.137</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='wheel_rear_left::link_rim'>
-          <pose>9.68218 0.962564 0.032939 1.5708 -0 3.137</pose>
+          <pose>4.15063 -1.45769 0.032939 1.5708 -0 3.137</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='wheel_rear_right::link_rim'>
-          <pose>9.68292 1.12456 0.032939 1.5708 -0 3.137</pose>
+          <pose>4.15137 -1.2957 0.032939 1.5708 -0 3.137</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -5700,7 +5764,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='wheel_front_left::link_rim'>
-          <pose>11.6793 0.992093 0.032939 1.5708 -0 3.137</pose>
+          <pose>11.6793 0.992092 0.032939 1.5708 -0 3.137</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -5712,7 +5776,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='wheel_rear_left::link_rim'>
-          <pose>11.9493 0.990853 0.032939 1.5708 -0 3.137</pose>
+          <pose>11.9493 0.990854 0.032939 1.5708 -0 3.137</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -5740,7 +5804,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='steer_left::link_steer'>
-          <pose>12.5566 0.993775 0.032939 1.5708 -0 3.137</pose>
+          <pose>12.5566 0.993774 0.032939 1.5708 -0 3.137</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -5752,7 +5816,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='wheel_front_left::link_rim'>
-          <pose>12.5505 0.985303 0.032939 1.5708 -0 3.137</pose>
+          <pose>12.5505 0.985302 0.032939 1.5708 -0 3.137</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -5764,7 +5828,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='wheel_rear_left::link_rim'>
-          <pose>12.8205 0.984063 0.032939 1.5708 -0 3.137</pose>
+          <pose>12.8205 0.984064 0.032939 1.5708 -0 3.137</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -5792,349 +5856,349 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='steer_left::link_steer'>
-          <pose>11.6964 0.273734 0.032939 1.5708 -0 3.137</pose>
+          <pose>11.6964 0.273733 0.032939 1.5708 -0 3.137</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='steer_right::link_steer'>
-          <pose>11.697 0.418733 0.032939 1.5708 -0 3.137</pose>
+          <pose>11.697 0.418732 0.032939 1.5708 -0 3.137</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='wheel_front_left::link_rim'>
-          <pose>11.6903 0.265262 0.032939 1.5708 -0 3.137</pose>
+          <pose>11.6903 0.265261 0.032939 1.5708 -0 3.137</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='wheel_front_right::link_rim'>
-          <pose>11.6911 0.42726 0.032939 1.5708 -0 3.137</pose>
+          <pose>11.6911 0.427259 0.032939 1.5708 -0 3.137</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='wheel_rear_left::link_rim'>
-          <pose>11.9603 0.264022 0.032939 1.5708 -0 3.137</pose>
+          <pose>11.9603 0.264023 0.032939 1.5708 -0 3.137</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='wheel_rear_right::link_rim'>
-          <pose>11.9611 0.42602 0.032939 1.5708 -0 3.137</pose>
+          <pose>11.9611 0.426021 0.032939 1.5708 -0 3.137</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='obstacle_rcCar_2_clone_2'>
-        <pose>6.6997 2.27261 0.032939 0 -0 1.59062</pose>
+        <pose>6.7603 2.16435 0.032939 0 -0 1.59061</pose>
         <scale>1 1 1</scale>
         <link name='car_body::link'>
-          <pose>6.70017 2.24862 0.004939 0 -0 1.59062</pose>
+          <pose>6.76077 2.14036 0.004939 0 -0 1.59062</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='chassis::link'>
-          <pose>6.6997 2.27261 0.032939 0 -0 -3.12177</pose>
+          <pose>6.7603 2.16435 0.032939 0 0 -3.12177</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='steer_left::link_steer'>
-          <pose>6.62499 2.38315 0.032939 1.5708 -0 1.59062</pose>
+          <pose>6.68559 2.27489 0.032939 1.5708 -0 1.59062</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='steer_right::link_steer'>
-          <pose>6.76996 2.38603 0.032939 1.5708 -0 1.59062</pose>
+          <pose>6.83056 2.27777 0.032939 1.5708 -0 1.59062</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='wheel_front_left::link_rim'>
-          <pose>6.61637 2.38898 0.032939 1.5708 -0 1.59062</pose>
+          <pose>6.67697 2.28072 0.032939 1.5708 -0 1.59062</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='wheel_front_right::link_rim'>
-          <pose>6.77834 2.39219 0.032939 1.5708 -0 1.59062</pose>
+          <pose>6.83894 2.28393 0.032939 1.5708 -0 1.59062</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='wheel_rear_left::link_rim'>
-          <pose>6.62172 2.11904 0.032939 1.5708 -0 1.59062</pose>
+          <pose>6.68232 2.01078 0.032939 1.5708 -0 1.59062</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='wheel_rear_right::link_rim'>
-          <pose>6.78369 2.12225 0.032939 1.5708 -0 1.59062</pose>
+          <pose>6.84429 2.01399 0.032939 1.5708 -0 1.59062</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='obstacle_rcCar_2_clone_3'>
-        <pose>3.52295 9.8475 0.032939 0 -0 -0.339655</pose>
+        <pose>4.13391 9.43474 0.032939 0 0 -0.66136</pose>
         <scale>1 1 1</scale>
         <link name='car_body::link'>
-          <pose>3.50032 9.85549 0.004939 0 -0 -0.339655</pose>
+          <pose>4.11496 9.44947 0.004939 0 -0 -0.661355</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='chassis::link'>
-          <pose>3.52295 9.8475 0.032939 0 -0 1.23114</pose>
+          <pose>4.13391 9.43474 0.032939 0 -0 0.90944</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='steer_left::link_steer'>
-          <pose>3.65271 9.87854 0.032939 1.5708 -0 -0.339655</pose>
+          <pose>4.26682 9.42316 0.032939 1.5708 -0 -0.661355</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='steer_right::link_steer'>
-          <pose>3.6044 9.74183 0.032939 1.5708 -0 -0.339655</pose>
+          <pose>4.17777 9.30874 0.032939 1.5708 -0 -0.661355</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='wheel_front_left::link_rim'>
-          <pose>3.66119 9.88456 0.032939 1.5708 -0 -0.339655</pose>
+          <pose>4.27678 9.42619 0.032939 1.5708 -0 -0.661355</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='wheel_front_right::link_rim'>
-          <pose>3.60722 9.73181 0.032939 1.5708 -0 -0.339655</pose>
+          <pose>4.17728 9.29833 0.032939 1.5708 -0 -0.661355</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='wheel_rear_left::link_rim'>
-          <pose>3.40662 9.97451 0.032939 1.5708 -0 -0.339655</pose>
+          <pose>4.0637 9.59201 0.032939 1.5708 -0 -0.661355</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='wheel_rear_right::link_rim'>
-          <pose>3.35265 9.82177 0.032939 1.5708 -0 -0.339655</pose>
+          <pose>3.96421 9.46417 0.032939 1.5708 -0 -0.661355</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='obstacle_rcCar_2_clone_4'>
-        <pose>4.93431 9.09098 0.032939 0 -0 2.05048</pose>
+        <pose>4.92719 9.05009 0.032939 0 -0 2.05049</pose>
         <scale>1 1 1</scale>
         <link name='car_body::link'>
-          <pose>4.94539 9.06969 0.004939 0 -0 2.05048</pose>
+          <pose>4.93827 9.0288 0.004939 0 -0 2.05048</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='chassis::link'>
-          <pose>4.93431 9.09098 0.032939 0 -0 -2.6619</pose>
+          <pose>4.92719 9.05009 0.032939 0 0 -2.6619</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='steer_left::link_steer'>
-          <pose>4.8183 9.15688 0.032939 1.5708 -0 2.05048</pose>
+          <pose>4.81118 9.11599 0.032939 1.5708 -0 2.05048</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='steer_right::link_steer'>
-          <pose>4.94694 9.2238 0.032939 1.5708 -0 2.05048</pose>
+          <pose>4.93983 9.18291 0.032939 1.5708 -0 2.05048</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='wheel_front_left::link_rim'>
-          <pose>4.808 9.15828 0.032939 1.5708 -0 2.05048</pose>
+          <pose>4.80088 9.11739 0.032939 1.5708 -0 2.05048</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='wheel_front_right::link_rim'>
-          <pose>4.95171 9.23304 0.032939 1.5708 -0 2.05048</pose>
+          <pose>4.9446 9.19215 0.032939 1.5708 -0 2.05048</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='wheel_rear_left::link_rim'>
-          <pose>4.9326 8.91875 0.032939 1.5708 -0 2.05048</pose>
+          <pose>4.92548 8.87786 0.032939 1.5708 -0 2.05048</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='wheel_rear_right::link_rim'>
-          <pose>5.07632 8.99352 0.032939 1.5708 -0 2.05048</pose>
+          <pose>5.0692 8.95263 0.032939 1.5708 -0 2.05048</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='obstacle_rcCar_3'>
-        <pose>10.5171 11.0292 0.032939 0 0 -0.612112</pose>
+        <pose>8.14 -2.096 0.032939 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='car_body::link'>
-          <pose>10.4975 11.043 0.004939 0 0 -0.612112</pose>
+          <pose>8.11603 -2.09597 0.004939 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='chassis::link'>
-          <pose>10.5171 11.0292 0.032939 0 -0 0.958688</pose>
+          <pose>8.14 -2.096 0.032939 0 -0 1.5708</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='steer_left::link_steer'>
-          <pose>10.6504 11.0242 0.032939 1.5708 -0 -0.612112</pose>
+          <pose>8.25197 -2.0235 0.032939 1.5708 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='steer_right::link_steer'>
-          <pose>10.5671 10.9055 0.032939 1.5708 -0 -0.612112</pose>
+          <pose>8.252 -2.16851 0.032939 1.5708 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='wheel_front_left::link_rim'>
-          <pose>10.6602 11.0277 0.032939 1.5708 -0 -0.612112</pose>
+          <pose>8.25798 -2.015 0.032939 1.5708 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='wheel_front_right::link_rim'>
-          <pose>10.5671 10.8951 0.032939 1.5708 -0 -0.612112</pose>
+          <pose>8.25798 -2.17702 0.032939 1.5708 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='wheel_rear_left::link_rim'>
-          <pose>10.4392 11.1828 0.032939 1.5708 -0 -0.612112</pose>
+          <pose>7.98799 -2.01505 0.032939 1.5708 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='wheel_rear_right::link_rim'>
-          <pose>10.3462 11.0502 0.032939 1.5708 -0 -0.612112</pose>
+          <pose>7.98806 -2.17701 0.032939 1.5708 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='obstacle_rcCar_3_clone'>
-        <pose>10.0332 11.8109 0.032939 0 -0 2.62235</pose>
+        <pose>11.297 11.5022 0.032939 0 0 -0.612112</pose>
         <scale>1 1 1</scale>
         <link name='car_body::link'>
-          <pose>10.0541 11.799 0.004939 0 -0 2.62235</pose>
+          <pose>11.2773 11.516 0.004939 0 -0 -0.612117</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='chassis::link'>
-          <pose>10.0332 11.8109 0.032939 0 0 -2.09003</pose>
+          <pose>11.297 11.5022 0.032939 0 -0 0.958688</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='steer_left::link_steer'>
-          <pose>9.90001 11.8036 0.032939 1.5708 -0 2.62235</pose>
+          <pose>11.4303 11.4971 0.032939 1.5708 -0 -0.612117</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='steer_right::link_steer'>
-          <pose>9.97197 11.9295 0.032939 1.5708 -0 2.62235</pose>
+          <pose>11.347 11.3784 0.032939 1.5708 -0 -0.612117</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='wheel_front_left::link_rim'>
-          <pose>9.89059 11.7992 0.032939 1.5708 -0 2.62235</pose>
+          <pose>11.4401 11.5006 0.032939 1.5708 -0 -0.612117</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='wheel_front_right::link_rim'>
-          <pose>9.97098 11.9398 0.032939 1.5708 -0 2.62235</pose>
+          <pose>11.347 11.3681 0.032939 1.5708 -0 -0.612117</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='wheel_rear_left::link_rim'>
-          <pose>10.125 11.6652 0.032939 1.5708 -0 2.62235</pose>
+          <pose>11.2191 11.6558 0.032939 1.5708 -0 -0.612117</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='wheel_rear_right::link_rim'>
-          <pose>10.2054 11.8058 0.032939 1.5708 -0 2.62235</pose>
+          <pose>11.126 11.5232 0.032939 1.5708 -0 -0.612117</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='obstacle_rcCar_4'>
-        <pose>10.2829 0.267428 0.032939 0 -0 3.137</pose>
+        <pose>9.607 -1.713 0.032939 0 -0 3.137</pose>
         <scale>1 1 1</scale>
         <link name='car_body::link'>
-          <pose>10.3069 0.267318 0.004939 0 -0 3.137</pose>
+          <pose>9.631 -1.71311 0.004939 0 -0 3.137</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='chassis::link'>
-          <pose>10.2829 0.267428 0.032939 0 0 -1.57539</pose>
+          <pose>9.607 -1.713 0.032939 0 -0 -1.57539</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='steer_left::link_steer'>
-          <pose>10.1705 0.195438 0.032939 1.5708 -0 3.137</pose>
+          <pose>9.4946 -1.78499 0.032939 1.5708 -0 3.137</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='steer_right::link_steer'>
-          <pose>10.1712 0.340438 0.032939 1.5708 -0 3.137</pose>
+          <pose>9.4953 -1.63999 0.032939 1.5708 -0 3.137</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='wheel_front_left::link_rim'>
-          <pose>10.1645 0.186968 0.032939 1.5708 -0 3.137</pose>
+          <pose>9.4886 -1.79346 0.032939 1.5708 -0 3.137</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='wheel_front_right::link_rim'>
-          <pose>10.1652 0.348968 0.032939 1.5708 -0 3.137</pose>
+          <pose>9.4893 -1.63146 0.032939 1.5708 -0 3.137</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='wheel_rear_left::link_rim'>
-          <pose>10.4345 0.185728 0.032939 1.5708 -0 3.137</pose>
+          <pose>9.7586 -1.7947 0.032939 1.5708 -0 3.137</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='wheel_rear_right::link_rim'>
-          <pose>10.4352 0.347728 0.032939 1.5708 -0 3.137</pose>
+          <pose>9.7593 -1.6327 0.032939 1.5708 -0 3.137</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -6179,10 +6243,10 @@
         </link>
       </model>
       <model name='track'>
-        <pose>10.348 6.893 0 0 -0 0</pose>
+        <pose>10.2706 6.893 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>10.348 6.893 0 0 -0 0</pose>
+          <pose>10.2706 6.893 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -20250,217 +20314,6 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>1.95071 3.37605 0.078998 0 -0 -0.007385</pose>
     </model>
-    <model name='PRIOR_I_clone_clone_0_clone_clone'>
-      <static>1</static>
-      <link name='sign_leg'>
-        <inertial>
-          <mass>0.5</mass>
-          <inertia>
-            <ixx>0.166667</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.166667</iyy>
-            <iyz>0</iyz>
-            <izz>0.166667</izz>
-          </inertia>
-          <pose>0 0 -0.078998 0 -0 0</pose>
-          <pose>0 0 0 0 -0 0</pose>
-        </inertial>
-        <pose>0.002193 -0.000682 -0.07606 0 -0 0</pose>
-        <gravity>1</gravity>
-        <self_collide>1</self_collide>
-        <kinematic>0</kinematic>
-        <enable_wind>1</enable_wind>
-        <visual name='visual'>
-          <pose>0 0 0 0 -0 0</pose>
-          <geometry>
-            <mesh>
-              <uri>model://subassembly/meshes/sign_leg.dae</uri>
-              <scale>1 1 1</scale>
-            </mesh>
-          </geometry>
-          <transparency>0</transparency>
-          <cast_shadows>1</cast_shadows>
-        </visual>
-        <collision name='collision'>
-          <laser_retro>0</laser_retro>
-          <max_contacts>10</max_contacts>
-          <pose>0 0 0 0 -0 0</pose>
-          <geometry>
-            <mesh>
-              <uri>model://subassembly/meshes/sign_leg.dae</uri>
-              <scale>1 1 1</scale>
-            </mesh>
-          </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>0.46</mu>
-                <mu2>1</mu2>
-                <fdir1>0 0 0</fdir1>
-                <slip1>0</slip1>
-                <slip2>0</slip2>
-              </ode>
-              <torsional>
-                <coefficient>1</coefficient>
-                <patch_radius>0</patch_radius>
-                <surface_radius>0</surface_radius>
-                <use_patch_radius>1</use_patch_radius>
-                <ode>
-                  <slip>0</slip>
-                </ode>
-              </torsional>
-            </friction>
-            <bounce>
-              <restitution_coefficient>0</restitution_coefficient>
-              <threshold>1e+06</threshold>
-            </bounce>
-            <contact>
-              <collide_without_contact>0</collide_without_contact>
-              <collide_without_contact_bitmask>1</collide_without_contact_bitmask>
-              <collide_bitmask>1</collide_bitmask>
-              <ode>
-                <soft_cfm>0</soft_cfm>
-                <soft_erp>0.2</soft_erp>
-                <kp>1e+13</kp>
-                <kd>1</kd>
-                <max_vel>0.01</max_vel>
-                <min_depth>0</min_depth>
-              </ode>
-              <bullet>
-                <split_impulse>1</split_impulse>
-                <split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
-                <soft_cfm>0</soft_cfm>
-                <soft_erp>0.2</soft_erp>
-                <kp>1e+13</kp>
-                <kd>1</kd>
-              </bullet>
-            </contact>
-          </surface>
-        </collision>
-      </link>
-      <link name='caro_support'>
-        <inertial>
-          <mass>0.022</mass>
-          <inertia>
-            <ixx>0.166667</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.166667</iyy>
-            <iyz>0</iyz>
-            <izz>0.166667</izz>
-          </inertia>
-          <pose>0 0 0 0 -0 0</pose>
-        </inertial>
-        <pose>-0.002193 0.000682 0.09894 0 -0 3.14159</pose>
-        <gravity>1</gravity>
-        <self_collide>1</self_collide>
-        <kinematic>0</kinematic>
-        <enable_wind>1</enable_wind>
-        <visual name='visual'>
-          <pose>0 0 0 0 -0 0</pose>
-          <geometry>
-            <mesh>
-              <uri>model://priority_sign/meshes/priority_sign.dae</uri>
-              <scale>1 1 1</scale>
-            </mesh>
-          </geometry>
-          <material>
-            <lighting>1</lighting>
-            <script>
-              <uri>model://priority_sign/materials/scripts</uri>
-              <uri>model://priority_sign/materials/textures</uri>
-              <name>PRIORITY_SIGN</name>
-            </script>
-            <shader type='vertex'>
-              <normal_map>__default__</normal_map>
-            </shader>
-            <ambient>0.3 0.3 0.3 1</ambient>
-            <diffuse>0.7 0.7 0.7 1</diffuse>
-            <specular>0.01 0.01 0.01 1</specular>
-            <emissive>0 0 0 1</emissive>
-          </material>
-          <transparency>0</transparency>
-          <cast_shadows>1</cast_shadows>
-        </visual>
-        <collision name='collision'>
-          <laser_retro>0</laser_retro>
-          <max_contacts>10</max_contacts>
-          <pose>0 0 0 0 -0 0</pose>
-          <geometry>
-            <mesh>
-              <uri>model://priority_sign/meshes/priority_sign.dae</uri>
-              <scale>1 1 1</scale>
-            </mesh>
-          </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>0.46</mu>
-                <mu2>1</mu2>
-                <fdir1>0 0 0</fdir1>
-                <slip1>0</slip1>
-                <slip2>0</slip2>
-              </ode>
-              <torsional>
-                <coefficient>1</coefficient>
-                <patch_radius>0</patch_radius>
-                <surface_radius>0</surface_radius>
-                <use_patch_radius>1</use_patch_radius>
-                <ode>
-                  <slip>0</slip>
-                </ode>
-              </torsional>
-            </friction>
-            <bounce>
-              <restitution_coefficient>0</restitution_coefficient>
-              <threshold>1e+06</threshold>
-            </bounce>
-            <contact>
-              <collide_without_contact>0</collide_without_contact>
-              <collide_without_contact_bitmask>1</collide_without_contact_bitmask>
-              <collide_bitmask>1</collide_bitmask>
-              <ode>
-                <soft_cfm>0</soft_cfm>
-                <soft_erp>0.2</soft_erp>
-                <kp>1e+13</kp>
-                <kd>1</kd>
-                <max_vel>0.01</max_vel>
-                <min_depth>0</min_depth>
-              </ode>
-              <bullet>
-                <split_impulse>1</split_impulse>
-                <split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
-                <soft_cfm>0</soft_cfm>
-                <soft_erp>0.2</soft_erp>
-                <kp>1e+13</kp>
-                <kd>1</kd>
-              </bullet>
-            </contact>
-          </surface>
-        </collision>
-      </link>
-      <joint name='support_to_leg_joint' type='fixed'>
-        <parent>link_0</parent>
-        <child>link_1</child>
-        <pose>0 0 0 0 -0 0</pose>
-        <physics>
-          <ode>
-            <limit>
-              <cfm>0</cfm>
-              <erp>0.2</erp>
-            </limit>
-            <suspension>
-              <cfm>0</cfm>
-              <erp>0.2</erp>
-            </suspension>
-          </ode>
-        </physics>
-      </joint>
-      <static>1</static>
-      <allow_auto_disable>1</allow_auto_disable>
-      <pose>1.47035 4.33162 0.078998 0 -0 1.61235</pose>
-    </model>
     <model name='PRIOR_I_clone_clone_0_clone_clone_0'>
       <static>1</static>
       <link name='sign_leg'>
@@ -23000,6 +22853,1061 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
       <pose>4.38626 12.1243 0 0 -0 1.56965</pose>
+    </model>
+    <model name='STOP_I_clone_1_clone_3'>
+      <static>1</static>
+      <link name='sign_leg'>
+        <inertial>
+          <mass>0.5</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+          <pose>0 0 -0.078998 0 -0 0</pose>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <pose>0.002193 -0.000682 -0.07606 0 -0 0</pose>
+        <gravity>1</gravity>
+        <self_collide>1</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>1</enable_wind>
+        <visual name='visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://subassembly/meshes/sign_leg.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <transparency>0</transparency>
+          <cast_shadows>1</cast_shadows>
+        </visual>
+        <collision name='collision'>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://subassembly/meshes/sign_leg.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.46</mu>
+                <mu2>1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <coefficient>1</coefficient>
+                <patch_radius>0</patch_radius>
+                <surface_radius>0</surface_radius>
+                <use_patch_radius>1</use_patch_radius>
+                <ode>
+                  <slip>0</slip>
+                </ode>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1e+06</threshold>
+            </bounce>
+            <contact>
+              <collide_without_contact>0</collide_without_contact>
+              <collide_without_contact_bitmask>1</collide_without_contact_bitmask>
+              <collide_bitmask>1</collide_bitmask>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+13</kp>
+                <kd>1</kd>
+                <max_vel>0.01</max_vel>
+                <min_depth>0</min_depth>
+              </ode>
+              <bullet>
+                <split_impulse>1</split_impulse>
+                <split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+13</kp>
+                <kd>1</kd>
+              </bullet>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <link name='octagonal_support'>
+        <inertial>
+          <mass>0.022</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <pose>-0.002193 0.000682 0.09894 0 -0 3.14159</pose>
+        <gravity>1</gravity>
+        <self_collide>1</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>1</enable_wind>
+        <visual name='visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://stop_sign/meshes/stop_sign.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <lighting>1</lighting>
+            <script>
+              <uri>model://stop_sign/materials/scripts</uri>
+              <uri>model://stop_sign/materials/textures</uri>
+              <name>STOP_SIGN</name>
+            </script>
+            <shader type='vertex'>
+              <normal_map>__default__</normal_map>
+            </shader>
+            <ambient>0.3 0.3 0.3 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+          <transparency>0</transparency>
+          <cast_shadows>1</cast_shadows>
+        </visual>
+        <collision name='collision'>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://stop_sign/meshes/stop_sign.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.46</mu>
+                <mu2>1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <coefficient>1</coefficient>
+                <patch_radius>0</patch_radius>
+                <surface_radius>0</surface_radius>
+                <use_patch_radius>1</use_patch_radius>
+                <ode>
+                  <slip>0</slip>
+                </ode>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1e+06</threshold>
+            </bounce>
+            <contact>
+              <collide_without_contact>0</collide_without_contact>
+              <collide_without_contact_bitmask>1</collide_without_contact_bitmask>
+              <collide_bitmask>1</collide_bitmask>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+13</kp>
+                <kd>1</kd>
+                <max_vel>0.01</max_vel>
+                <min_depth>0</min_depth>
+              </ode>
+              <bullet>
+                <split_impulse>1</split_impulse>
+                <split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+13</kp>
+                <kd>1</kd>
+              </bullet>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <joint name='support_to_leg_joint' type='fixed'>
+        <parent>link_0</parent>
+        <child>link_1</child>
+        <pose>0 0 0 0 -0 0</pose>
+        <physics>
+          <ode>
+            <limit>
+              <cfm>0</cfm>
+              <erp>0.2</erp>
+            </limit>
+            <suspension>
+              <cfm>0</cfm>
+              <erp>0.2</erp>
+            </suspension>
+          </ode>
+        </physics>
+      </joint>
+      <static>1</static>
+      <allow_auto_disable>1</allow_auto_disable>
+      <pose>4.24298 6.31284 0.078998 0 0 -0.007385</pose>
+    </model>
+    <model name='PRIOR_I_clone_clone_clone'>
+      <static>1</static>
+      <link name='sign_leg'>
+        <inertial>
+          <mass>0.5</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+          <pose>0 0 -0.078998 0 -0 0</pose>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <pose>0.002193 -0.000682 -0.07606 0 -0 0</pose>
+        <gravity>1</gravity>
+        <self_collide>1</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>1</enable_wind>
+        <visual name='visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://subassembly/meshes/sign_leg.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <transparency>0</transparency>
+          <cast_shadows>1</cast_shadows>
+        </visual>
+        <collision name='collision'>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://subassembly/meshes/sign_leg.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.46</mu>
+                <mu2>1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <coefficient>1</coefficient>
+                <patch_radius>0</patch_radius>
+                <surface_radius>0</surface_radius>
+                <use_patch_radius>1</use_patch_radius>
+                <ode>
+                  <slip>0</slip>
+                </ode>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1e+06</threshold>
+            </bounce>
+            <contact>
+              <collide_without_contact>0</collide_without_contact>
+              <collide_without_contact_bitmask>1</collide_without_contact_bitmask>
+              <collide_bitmask>1</collide_bitmask>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+13</kp>
+                <kd>1</kd>
+                <max_vel>0.01</max_vel>
+                <min_depth>0</min_depth>
+              </ode>
+              <bullet>
+                <split_impulse>1</split_impulse>
+                <split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+13</kp>
+                <kd>1</kd>
+              </bullet>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <link name='caro_support'>
+        <inertial>
+          <mass>0.022</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <pose>-0.002193 0.000682 0.09894 0 -0 3.14159</pose>
+        <gravity>1</gravity>
+        <self_collide>1</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>1</enable_wind>
+        <visual name='visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://priority_sign/meshes/priority_sign.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <lighting>1</lighting>
+            <script>
+              <uri>model://priority_sign/materials/scripts</uri>
+              <uri>model://priority_sign/materials/textures</uri>
+              <name>PRIORITY_SIGN</name>
+            </script>
+            <shader type='vertex'>
+              <normal_map>__default__</normal_map>
+            </shader>
+            <ambient>0.3 0.3 0.3 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+          <transparency>0</transparency>
+          <cast_shadows>1</cast_shadows>
+        </visual>
+        <collision name='collision'>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://priority_sign/meshes/priority_sign.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.46</mu>
+                <mu2>1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <coefficient>1</coefficient>
+                <patch_radius>0</patch_radius>
+                <surface_radius>0</surface_radius>
+                <use_patch_radius>1</use_patch_radius>
+                <ode>
+                  <slip>0</slip>
+                </ode>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1e+06</threshold>
+            </bounce>
+            <contact>
+              <collide_without_contact>0</collide_without_contact>
+              <collide_without_contact_bitmask>1</collide_without_contact_bitmask>
+              <collide_bitmask>1</collide_bitmask>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+13</kp>
+                <kd>1</kd>
+                <max_vel>0.01</max_vel>
+                <min_depth>0</min_depth>
+              </ode>
+              <bullet>
+                <split_impulse>1</split_impulse>
+                <split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+13</kp>
+                <kd>1</kd>
+              </bullet>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <joint name='support_to_leg_joint' type='fixed'>
+        <parent>link_0</parent>
+        <child>link_1</child>
+        <pose>0 0 0 0 -0 0</pose>
+        <physics>
+          <ode>
+            <limit>
+              <cfm>0</cfm>
+              <erp>0.2</erp>
+            </limit>
+            <suspension>
+              <cfm>0</cfm>
+              <erp>0.2</erp>
+            </suspension>
+          </ode>
+        </physics>
+      </joint>
+      <static>1</static>
+      <allow_auto_disable>1</allow_auto_disable>
+      <pose>4.59142 4.62043 0.078998 0 0 -1.66154</pose>
+    </model>
+    <model name='PRIOR_I_clone_clone_3'>
+      <static>1</static>
+      <link name='sign_leg'>
+        <inertial>
+          <mass>0.5</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+          <pose>0 0 -0.078998 0 -0 0</pose>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <pose>0.002193 -0.000682 -0.07606 0 -0 0</pose>
+        <gravity>1</gravity>
+        <self_collide>1</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>1</enable_wind>
+        <visual name='visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://subassembly/meshes/sign_leg.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <transparency>0</transparency>
+          <cast_shadows>1</cast_shadows>
+        </visual>
+        <collision name='collision'>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://subassembly/meshes/sign_leg.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.46</mu>
+                <mu2>1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <coefficient>1</coefficient>
+                <patch_radius>0</patch_radius>
+                <surface_radius>0</surface_radius>
+                <use_patch_radius>1</use_patch_radius>
+                <ode>
+                  <slip>0</slip>
+                </ode>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1e+06</threshold>
+            </bounce>
+            <contact>
+              <collide_without_contact>0</collide_without_contact>
+              <collide_without_contact_bitmask>1</collide_without_contact_bitmask>
+              <collide_bitmask>1</collide_bitmask>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+13</kp>
+                <kd>1</kd>
+                <max_vel>0.01</max_vel>
+                <min_depth>0</min_depth>
+              </ode>
+              <bullet>
+                <split_impulse>1</split_impulse>
+                <split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+13</kp>
+                <kd>1</kd>
+              </bullet>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <link name='caro_support'>
+        <inertial>
+          <mass>0.022</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <pose>-0.002193 0.000682 0.09894 0 -0 3.14159</pose>
+        <gravity>1</gravity>
+        <self_collide>1</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>1</enable_wind>
+        <visual name='visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://priority_sign/meshes/priority_sign.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <lighting>1</lighting>
+            <script>
+              <uri>model://priority_sign/materials/scripts</uri>
+              <uri>model://priority_sign/materials/textures</uri>
+              <name>PRIORITY_SIGN</name>
+            </script>
+            <shader type='vertex'>
+              <normal_map>__default__</normal_map>
+            </shader>
+            <ambient>0.3 0.3 0.3 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+          <transparency>0</transparency>
+          <cast_shadows>1</cast_shadows>
+        </visual>
+        <collision name='collision'>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://priority_sign/meshes/priority_sign.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.46</mu>
+                <mu2>1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <coefficient>1</coefficient>
+                <patch_radius>0</patch_radius>
+                <surface_radius>0</surface_radius>
+                <use_patch_radius>1</use_patch_radius>
+                <ode>
+                  <slip>0</slip>
+                </ode>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1e+06</threshold>
+            </bounce>
+            <contact>
+              <collide_without_contact>0</collide_without_contact>
+              <collide_without_contact_bitmask>1</collide_without_contact_bitmask>
+              <collide_bitmask>1</collide_bitmask>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+13</kp>
+                <kd>1</kd>
+                <max_vel>0.01</max_vel>
+                <min_depth>0</min_depth>
+              </ode>
+              <bullet>
+                <split_impulse>1</split_impulse>
+                <split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+13</kp>
+                <kd>1</kd>
+              </bullet>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <joint name='support_to_leg_joint' type='fixed'>
+        <parent>link_0</parent>
+        <child>link_1</child>
+        <pose>0 0 0 0 -0 0</pose>
+        <physics>
+          <ode>
+            <limit>
+              <cfm>0</cfm>
+              <erp>0.2</erp>
+            </limit>
+            <suspension>
+              <cfm>0</cfm>
+              <erp>0.2</erp>
+            </suspension>
+          </ode>
+        </physics>
+      </joint>
+      <static>1</static>
+      <allow_auto_disable>1</allow_auto_disable>
+      <pose>5.47916 5.99313 0.078998 0 -0 1.61235</pose>
+    </model>
+    <model name='PRIOR_I_clone_clone_1_clone'>
+      <static>1</static>
+      <link name='sign_leg'>
+        <inertial>
+          <mass>0.5</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+          <pose>0 0 -0.078998 0 -0 0</pose>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <pose>0.002193 -0.000682 -0.07606 0 -0 0</pose>
+        <gravity>1</gravity>
+        <self_collide>1</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>1</enable_wind>
+        <visual name='visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://subassembly/meshes/sign_leg.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <transparency>0</transparency>
+          <cast_shadows>1</cast_shadows>
+        </visual>
+        <collision name='collision'>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://subassembly/meshes/sign_leg.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.46</mu>
+                <mu2>1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <coefficient>1</coefficient>
+                <patch_radius>0</patch_radius>
+                <surface_radius>0</surface_radius>
+                <use_patch_radius>1</use_patch_radius>
+                <ode>
+                  <slip>0</slip>
+                </ode>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1e+06</threshold>
+            </bounce>
+            <contact>
+              <collide_without_contact>0</collide_without_contact>
+              <collide_without_contact_bitmask>1</collide_without_contact_bitmask>
+              <collide_bitmask>1</collide_bitmask>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+13</kp>
+                <kd>1</kd>
+                <max_vel>0.01</max_vel>
+                <min_depth>0</min_depth>
+              </ode>
+              <bullet>
+                <split_impulse>1</split_impulse>
+                <split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+13</kp>
+                <kd>1</kd>
+              </bullet>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <link name='caro_support'>
+        <inertial>
+          <mass>0.022</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <pose>-0.002193 0.000682 0.09894 0 -0 3.14159</pose>
+        <gravity>1</gravity>
+        <self_collide>1</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>1</enable_wind>
+        <visual name='visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://priority_sign/meshes/priority_sign.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <lighting>1</lighting>
+            <script>
+              <uri>model://priority_sign/materials/scripts</uri>
+              <uri>model://priority_sign/materials/textures</uri>
+              <name>PRIORITY_SIGN</name>
+            </script>
+            <shader type='vertex'>
+              <normal_map>__default__</normal_map>
+            </shader>
+            <ambient>0.3 0.3 0.3 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+          <transparency>0</transparency>
+          <cast_shadows>1</cast_shadows>
+        </visual>
+        <collision name='collision'>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://priority_sign/meshes/priority_sign.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.46</mu>
+                <mu2>1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <coefficient>1</coefficient>
+                <patch_radius>0</patch_radius>
+                <surface_radius>0</surface_radius>
+                <use_patch_radius>1</use_patch_radius>
+                <ode>
+                  <slip>0</slip>
+                </ode>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1e+06</threshold>
+            </bounce>
+            <contact>
+              <collide_without_contact>0</collide_without_contact>
+              <collide_without_contact_bitmask>1</collide_without_contact_bitmask>
+              <collide_bitmask>1</collide_bitmask>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+13</kp>
+                <kd>1</kd>
+                <max_vel>0.01</max_vel>
+                <min_depth>0</min_depth>
+              </ode>
+              <bullet>
+                <split_impulse>1</split_impulse>
+                <split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+13</kp>
+                <kd>1</kd>
+              </bullet>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <joint name='support_to_leg_joint' type='fixed'>
+        <parent>link_0</parent>
+        <child>link_1</child>
+        <pose>0 0 0 0 -0 0</pose>
+        <physics>
+          <ode>
+            <limit>
+              <cfm>0</cfm>
+              <erp>0.2</erp>
+            </limit>
+            <suspension>
+              <cfm>0</cfm>
+              <erp>0.2</erp>
+            </suspension>
+          </ode>
+        </physics>
+      </joint>
+      <static>1</static>
+      <allow_auto_disable>1</allow_auto_disable>
+      <pose>2.29195 4.60319 0.078998 0 -0 1.61235</pose>
+    </model>
+    <model name='STOP_I_clone_clone'>
+      <static>1</static>
+      <link name='sign_leg'>
+        <inertial>
+          <mass>0.5</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+          <pose>0 0 -0.078998 0 -0 0</pose>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <pose>0.002193 -0.000682 -0.07606 0 -0 0</pose>
+        <gravity>1</gravity>
+        <self_collide>1</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>1</enable_wind>
+        <visual name='visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://subassembly/meshes/sign_leg.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <transparency>0</transparency>
+          <cast_shadows>1</cast_shadows>
+        </visual>
+        <collision name='collision'>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://subassembly/meshes/sign_leg.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.46</mu>
+                <mu2>1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <coefficient>1</coefficient>
+                <patch_radius>0</patch_radius>
+                <surface_radius>0</surface_radius>
+                <use_patch_radius>1</use_patch_radius>
+                <ode>
+                  <slip>0</slip>
+                </ode>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1e+06</threshold>
+            </bounce>
+            <contact>
+              <collide_without_contact>0</collide_without_contact>
+              <collide_without_contact_bitmask>1</collide_without_contact_bitmask>
+              <collide_bitmask>1</collide_bitmask>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+13</kp>
+                <kd>1</kd>
+                <max_vel>0.01</max_vel>
+                <min_depth>0</min_depth>
+              </ode>
+              <bullet>
+                <split_impulse>1</split_impulse>
+                <split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+13</kp>
+                <kd>1</kd>
+              </bullet>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <link name='octagonal_support'>
+        <inertial>
+          <mass>0.022</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <pose>-0.002193 0.000682 0.09894 0 -0 3.14159</pose>
+        <gravity>1</gravity>
+        <self_collide>1</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>1</enable_wind>
+        <visual name='visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://stop_sign/meshes/stop_sign.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <lighting>1</lighting>
+            <script>
+              <uri>model://stop_sign/materials/scripts</uri>
+              <uri>model://stop_sign/materials/textures</uri>
+              <name>STOP_SIGN</name>
+            </script>
+            <shader type='vertex'>
+              <normal_map>__default__</normal_map>
+            </shader>
+            <ambient>0.3 0.3 0.3 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+          <transparency>0</transparency>
+          <cast_shadows>1</cast_shadows>
+        </visual>
+        <collision name='collision'>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://stop_sign/meshes/stop_sign.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.46</mu>
+                <mu2>1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <coefficient>1</coefficient>
+                <patch_radius>0</patch_radius>
+                <surface_radius>0</surface_radius>
+                <use_patch_radius>1</use_patch_radius>
+                <ode>
+                  <slip>0</slip>
+                </ode>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1e+06</threshold>
+            </bounce>
+            <contact>
+              <collide_without_contact>0</collide_without_contact>
+              <collide_without_contact_bitmask>1</collide_without_contact_bitmask>
+              <collide_bitmask>1</collide_bitmask>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+13</kp>
+                <kd>1</kd>
+                <max_vel>0.01</max_vel>
+                <min_depth>0</min_depth>
+              </ode>
+              <bullet>
+                <split_impulse>1</split_impulse>
+                <split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+13</kp>
+                <kd>1</kd>
+              </bullet>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <joint name='support_to_leg_joint' type='fixed'>
+        <parent>link_0</parent>
+        <child>link_1</child>
+        <pose>0 0 0 0 -0 0</pose>
+        <physics>
+          <ode>
+            <limit>
+              <cfm>0</cfm>
+              <erp>0.2</erp>
+            </limit>
+            <suspension>
+              <cfm>0</cfm>
+              <erp>0.2</erp>
+            </suspension>
+          </ode>
+        </physics>
+      </joint>
+      <static>1</static>
+      <allow_auto_disable>1</allow_auto_disable>
+      <pose>1.36315 4.2778 0.078998 0 -0 3.14159</pose>
     </model>
   </world>
 </sdf>
