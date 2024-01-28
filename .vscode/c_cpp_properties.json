@@ -1,0 +1,28 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/simonli/Simulator/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/simonli/Simulator/src/plugins_pkgs/bno055_plugin/include/**",
+        "/home/simonli/Simulator/src/plugins_pkgs/car_plugin/include/**",
+        "/home/simonli/Simulator/src/plugins_pkgs/gps_plugin/include/**",
+        "/home/simonli/Simulator/src/mpc/include/**",
+        "/home/simonli/Simulator/src/plugins_pkgs/pedestrian_object_plugin/include/**",
+        "/home/simonli/Simulator/src/plugins_pkgs/realsense_gazebo_plugin/include/**",
+        "/home/simonli/Simulator/src/plugins_pkgs/traffic_light_plugin/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
