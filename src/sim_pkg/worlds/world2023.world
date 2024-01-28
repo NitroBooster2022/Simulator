@@ -63,7 +63,8 @@
             <plane>
               <normal>0 0 1</normal>
               <!-- <size>14.68 14.99</size> -->
-              <size>20.696 13.786</size>
+              <!-- <size>20.696 13.786</size> -->
+              <size>20.541 13.656</size>
             </plane>
           </geometry>
           <surface>
@@ -91,7 +92,8 @@
             <plane>
               <normal>0 0 1</normal>
               <!-- <size>14.68 14.99</size> -->
-              <size>20.696 13.786</size>
+              <!-- <size>20.696 13.786</size> -->
+              <size>20.541 13.656</size>
             </plane>
           </geometry>
           <material>
@@ -111,7 +113,8 @@
         <kinematic>0</kinematic>
       </link>
       <!-- <pose frame=''>7.34 -7.495 0 0 -0 0</pose> -->
-      <pose frame=''>10.348 6.893 0 0 -0 0</pose>
+      <!-- <pose frame=''>10.348 6.893 0 0 -0 0</pose> -->
+      <pose frame=''>10.27055 6.893 0 0 -0 0</pose>
     </model>
     <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
     <atmosphere type='adiabatic'/>
