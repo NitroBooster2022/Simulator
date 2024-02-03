@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
  
   <launch>
+  <rosparam command="load" file="$(find mpc)/config/gps_config.yaml" />
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
-    <arg name="world_name"   value="$(find sim_pkg)/worlds/world2023_objects.world"/>
+    <arg name="world_name"   value="$(find sim_pkg)/worlds/world2023_objects2.world"/>
     <!-- <arg name="world_name"   value="$(find sim_pkg)/worlds/world2023.world"/> -->
     <arg name="paused"       value="false"/>    
     <arg name="use_sim_time" value="true"/>
@@ -11,5 +12,8 @@
   </include>
  
   <node pkg="sim_pkg" type="delay.sh" args="5 sim_pkg cardepth2023.launch" name="car" output="screen"/>
+  <!-- <node pkg="sim_pkg" type="delay.sh" args="5 sim_pkg obstacle_car.launch"        name="obstacle_car"         output="screen"/> -->
+  <!-- <node pkg="sim_pkg" type="delay.sh" args="5 sim_pkg cardepth2023multiple.launch" name="car" output="screen"/> -->
+  <!-- <node pkg="sim_pkg" type="delay2.sh" args="5 sim_pkg cardepth2023multiple2.launch" name="c1" output="screen"/> -->
 
   </launch>

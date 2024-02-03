@@ -20,8 +20,19 @@ namespace gazebo
       			// Save a pointer to the model for later use
       			this->m_model = model_ptr;
 
+            std::string namespace_ = "";
+            if (sdf_ptr->HasElement("rosTopicNamespace"))
+            {
+                namespace_ = sdf_ptr->Get<std::string>("rosTopicNamespace");
+            }
+
+            if (!namespace_.empty() && namespace_.front() != '/')
+            {
+                namespace_ = "/" + namespace_;
+            }
+            ROS_INFO_STREAM("imu Namespace: " << namespace_);
           	// Create topic name        	
-          	std::string topic_name = "/automobile/IMU";
+          	std::string topic_name = namespace_ + "/IMU";
 	        
 
             // Initialize ros, if it has not already bee initialized.
@@ -34,8 +45,8 @@ namespace gazebo
 
             this->m_ros_node.reset(new ::ros::NodeHandle("/bnoNODEvirt"));
           	this->m_pubBNO = this->m_ros_node->advertise<utils::IMU>(topic_name, 2);
-            this->m_pubIMU = this->m_ros_node->advertise<sensor_msgs::Imu>("/imu", 2);
-            this->m_pubEncoder = this->m_ros_node->advertise<utils::encoder>("/encoder", 2);
+            this->m_pubIMU = this->m_ros_node->advertise<sensor_msgs::Imu>(namespace_ + "/imu", 2);
+            // this->m_pubEncoder = this->m_ros_node->advertise<utils::encoder>(namespace_ + "/encoder", 2);
 
             if(DEBUG)
             {
@@ -102,20 +113,20 @@ namespace gazebo
             this->m_pubIMU.publish(this->m_imu_msg);
 
             // encoder
-            this->m_encoder_msg.header.stamp = ros::Time::now();
-            this->m_encoder_msg.header.frame_id = "encoder";
-            double x_speed = current_linear_velocity.X();
-            double y_speed = current_linear_velocity.Y();
-            double speedYaw = atan2(y_speed, x_speed);
-            double speed = sqrt(x_speed * x_speed + y_speed * y_speed);
-            double yaw = this->m_model->RelativePose().Rot().Yaw();
-            double angle_diff = fmod((speedYaw - yaw + M_PI), (2 * M_PI)) - M_PI;
-            if (fabs(angle_diff) > 3 * M_PI / 4)
-            {
-                speed *= -1;
-            }
-            this->m_encoder_msg.speed = speed;
-            this->m_pubEncoder.publish(this->m_encoder_msg);
+            // this->m_encoder_msg.header.stamp = ros::Time::now();
+            // this->m_encoder_msg.header.frame_id = "encoder";
+            // double x_speed = current_linear_velocity.X();
+            // double y_speed = current_linear_velocity.Y();
+            // double speedYaw = atan2(y_speed, x_speed);
+            // double speed = sqrt(x_speed * x_speed + y_speed * y_speed);
+            // double yaw = this->m_model->RelativePose().Rot().Yaw();
+            // double angle_diff = fmod((speedYaw - yaw + M_PI), (2 * M_PI)) - M_PI;
+            // if (fabs(angle_diff) > 3 * M_PI / 4)
+            // {
+            //     speed *= -1;
+            // }
+            // this->m_encoder_msg.speed = speed;
+            // this->m_pubEncoder.publish(this->m_encoder_msg);
         };      
     }; 
     GZ_REGISTER_MODEL_PLUGIN(bno055::BNO055)

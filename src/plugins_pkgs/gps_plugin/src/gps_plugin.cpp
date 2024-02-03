@@ -32,9 +32,20 @@ namespace gazebo
 
   			  // Save a pointer to the model for later use
   			  this->m_model = model_ptr;
-  			
+
+          std::string namespace_ = "";
+          if (sdf_ptr->HasElement("rosTopicNamespace"))
+          {
+              namespace_ = sdf_ptr->Get<std::string>("rosTopicNamespace");
+          }
+
+          if (!namespace_.empty() && namespace_.front() != '/')
+          {
+              namespace_ = "/" + namespace_;
+          }
+
         	// Create topic name      	
-        	std::string topic_name = "/automobile/localisation";
+        	std::string topic_name = namespace_ + "/localisation";
   	        
           // Initialize ros, if it has not already been initialized.
     			if (!ros::isInitialized())

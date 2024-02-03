@@ -27,7 +27,8 @@ namespace gazebo
         class CMessageHandler
         {
             public:
-                CMessageHandler(std::string, IRobotCommandSetter*);
+                // CMessageHandler(std::string, IRobotCommandSetter*);
+                CMessageHandler(std::string, IRobotCommandSetter* , const std::string&);
                 ~CMessageHandler();
                 void OnMsgCommand(std_msgs::String _msg);
 
