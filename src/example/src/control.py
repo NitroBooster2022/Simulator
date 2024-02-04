@@ -35,10 +35,11 @@ from RcBrainThread import RcBrainThread
 from std_msgs.msg import String
 
 import rospy
+import argparse
 
 class RemoteControlTransmitterProcess():
     # ===================================== INIT==========================================
-    def __init__(self):
+    def __init__(self, ns = "automobile"):
         """Run on the PC. It forwards the commans from the user via KeboardListenerThread to the RcBrainThread. 
         The RcBrainThread converts them into actual commands and sends them to the remote via a socket connection.
         
@@ -52,7 +53,7 @@ class RemoteControlTransmitterProcess():
         self.rcBrain   =  RcBrainThread()   
         
         rospy.init_node('EXAMPLEnode', anonymous=False)     
-        self.publisher = rospy.Publisher('/automobile/command', String, queue_size=1)
+        self.publisher = rospy.Publisher('/' + ns + '/command', String, queue_size=1)
 
     # ===================================== RUN ==========================================
     def run(self):
@@ -115,8 +116,12 @@ class RemoteControlTransmitterProcess():
             self.publisher.publish(command)  
             
 if __name__ == '__main__':
+    # add an argument for namespace name, default is automobile
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--ns", type=str, default="automobile", help="namespace name")
+    args = parser.parse_args()
     try:
-        nod = RemoteControlTransmitterProcess()
+        nod = RemoteControlTransmitterProcess(args.ns)
         nod.run()
     except rospy.ROSInterruptException:
         pass
