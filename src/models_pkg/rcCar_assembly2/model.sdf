@@ -45,6 +45,13 @@
     <!-- including the camera link -->
     <!-- 0.261799388 -->
 
+    <!-- realsense -->
+    <!-- <include>
+      <uri>model://realsense_camera</uri>
+      <name>camera2</name>
+      <pose>0 0 0.2 0 0 0.0</pose>
+    </include> -->
+
     <!-- includeing the car body -->
     <include>
       <uri>model://car_body</uri>
@@ -283,7 +290,7 @@
     <!-- fixed joint for the camera -->
     <joint name='joint_camera' type='fixed'>
       <parent>chassis::link</parent>
-      <child>camera::link_camera</child>
+      <child>camera2::link_camera</child>
       <pose frame=''>0 0 0 0 -0 0</pose>
       <physics>
         <ode>

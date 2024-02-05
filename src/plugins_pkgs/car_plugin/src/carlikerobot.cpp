@@ -52,7 +52,7 @@ namespace gazebo{
                 ROS_INFO("Front speed:\t\t[%f, %f]", l_Vr_L, l_Vr_R);
             }
             std::string leftJointName = this->_jointLeft->GetScopedName();
-            ROS_INFO_STREAM("Left joint name: " << leftJointName);
+            // ROS_INFO_STREAM("Left joint name: " << leftJointName);
             _model->GetJointController()->SetVelocityTarget(this->_jointLeft->GetScopedName(),l_Vr_L);
             _model->GetJointController()->SetVelocityTarget(this->_jointRight->GetScopedName(),l_Vr_R);
             
