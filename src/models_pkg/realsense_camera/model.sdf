@@ -91,13 +91,13 @@
         <topic>__default_topic__</topic>
         <plugin filename="libgazebo_ros_imu_sensor.so" name="imu_plugin">
           <robotNamespace/>
-          <topicName>/camera/imu</topicName>
+          <topicName>/realsense/imu</topicName>
           <bodyName>imu_link</bodyName>
           <updateRateHZ>200.0</updateRateHZ>
           <gaussianNoise>0.05</gaussianNoise>
           <xyzOffset>0 0 0</xyzOffset>
           <rpyOffset>0 0 0</rpyOffset>
-          <frameName>chassis</frameName>
+          <frameName>realsense</frameName>
           <initialOrientationAsReference>false</initialOrientationAsReference>
         </plugin>
       </sensor>
@@ -200,7 +200,7 @@
         <infraredUpdateRate>30.0</infraredUpdateRate>
         <depthTopicName>depth/image_raw</depthTopicName>
         <depthCameraInfoTopicName>depth/camera_info</depthCameraInfoTopicName>
-        <colorTopicName>image_raw</colorTopicName>
+        <colorTopicName>color/image_raw</colorTopicName>
         <colorCameraInfoTopicName>color/camera_info</colorCameraInfoTopicName>
         <infrared1TopicName>infra1/image_raw</infrared1TopicName>
         <infrared1CameraInfoTopicName>infra1/camera_info</infrared1CameraInfoTopicName>
