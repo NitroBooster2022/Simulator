@@ -48,7 +48,7 @@
       <uri>model://camera</uri>
       <pose>0 0 0.2 0 0.2617 -0.0</pose>
       <!-- <pose>0 0 0.2 0 0.2617 -0.2</pose> -->
-      <name>camera</name>
+      <name>camera1</name>
     </include>
 
     <!-- includeing the car body -->
@@ -307,6 +307,7 @@
 
     <!-- Plugin  -->
     <plugin name='CarLikeRobotPlugin' filename='libcar_plugin.so'>
+      <robotNamespace>$(arg namespace)</robotNamespace>
       <wheelbase>0.26</wheelbase>
       <axletrack>0.162</axletrack>
       <wheelradius>0.0325</wheelradius>
@@ -335,9 +336,12 @@
       <robotNamespace>/</robotNamespace>
     </plugin>
 
-    <plugin name='bno055' filename='libbno055_plugin.so'> </plugin>
-    <plugin name='gps' filename='libgps_plugin.so'> </plugin>
-
+    <plugin name='bno055' filename='libbno055_plugin.so'> 
+      <rosTopicNamespace>$(arg namespace)</rosTopicNamespace>
+    </plugin>
+    <plugin name='gps' filename='libgps_plugin.so'> 
+      <rosTopicNamespace>$(arg namespace)</rosTopicNamespace>
+    </plugin>
     <!-- Plugin for publishing TF for the chassis -->
     <!-- <plugin name="gazebo_ros_tf_publisher_for_chassis" filename="libgazebo_ros_p3d.so">
       <ros>

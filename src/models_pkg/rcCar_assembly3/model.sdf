@@ -1,6 +1,6 @@
 <?xml version='1.0'?>
 <sdf version='1.6'>
-  <model name='automobile'>
+  <model name='car3'>
     <include>
       <uri>model://chassis</uri>
       <pose>0 0 0 0 0 0</pose>
@@ -44,23 +44,6 @@
     
     <!-- including the camera link -->
     <!-- 0.261799388 -->
-    <!-- <include>
-      <uri>model://camera</uri>
-      <pose>0 0 0.2 0 0.2617 -0.0</pose>
-      <pose>0 0 0.2 0 0.2617 -0.2</pose>
-      <name>camera</name>
-    </include> -->
-
-    <!-- realsense -->
-    <include>
-      <uri>model://realsense_camera</uri>
-      <!-- <uri>model://camera</uri> -->
-      <name>camera</name>
-      <!-- <pose>0 0 0.2 0 0 -0.2</pose> -->
-
-      <pose>0.1 0 0.16 0 0.15 0.0</pose>
-
-    </include>
 
     <!-- includeing the car body -->
     <include>
@@ -306,7 +289,7 @@
         <ode>
           <limit>
             <cfm>0</cfm>
-            <erp>0.2</erp> 
+            <erp>0.2</erp>
           </limit>
           <suspension>
             <cfm>0</cfm>
@@ -316,22 +299,9 @@
       </physics>
     </joint>
 
-    <!-- <joint name='joint_camera' type='fixed'>
-      <parent>chassis::link</parent>
-      <child>camera::link_camera</child>
-      <pose frame=''>0 0 0 0 -0 0</pose>
-      <axis>
-        <xyz>0 0 1</xyz>
-        <limit>
-          <upper>0</upper>
-          <lower>0</lower>
-        </limit>
-      </axis>
-    </joint> -->
-
     <!-- Plugin  -->
     <plugin name='CarLikeRobotPlugin' filename='libcar_plugin.so'>
-      <robotNamespace>automobile</robotNamespace>
+      <robotNamespace>car3</robotNamespace>
       <wheelbase>0.26</wheelbase>
       <axletrack>0.162</axletrack>
       <wheelradius>0.0325</wheelradius>
@@ -361,23 +331,11 @@
     </plugin>
 
     <plugin name='bno055' filename='libbno055_plugin.so'> 
-      <rosTopicNamespace>automobile</rosTopicNamespace>
+      <rosTopicNamespace>car3</rosTopicNamespace>
     </plugin>
     <plugin name='gps' filename='libgps_plugin.so'> 
-      <rosTopicNamespace>automobile</rosTopicNamespace>
+      <rosTopicNamespace>car3</rosTopicNamespace>
     </plugin>
-
-    <!-- Plugin for publishing TF for the chassis -->
-    <!-- <plugin name="gazebo_ros_tf_publisher_for_chassis" filename="libgazebo_ros_p3d.so">
-      <ros>
-        <namespace>/</namespace>
-        <argument>tf_prefix:=automobile</argument>
-      </ros>
-      <updateRate>50.0</updateRate>
-      <bodyName>chassis::link</bodyName> 
-      <topicName>odom</topicName>
-      <frameName>map</frameName>
-    </plugin> -->
     
   </model>
 </sdf>

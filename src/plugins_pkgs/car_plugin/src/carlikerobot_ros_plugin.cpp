@@ -7,22 +7,39 @@ namespace gazebo
     namespace carlikerobot
     {
         /// Movement serialHandler
-        CMessageHandler::CMessageHandler(std::string _modelName, IRobotCommandSetter* _setter)
+        // CMessageHandler::CMessageHandler(std::string _modelName, IRobotCommandSetter* _setter)
+        CMessageHandler::CMessageHandler(std::string _modelName, IRobotCommandSetter* _setter, const std::string& _namespace)
         {
             this->_robotSetter = _setter;
 
             // Generate topic name
-            std::string topicName = "/automobile/command";
-            std::string listen_topicName = "/automobile/feedback";
+            // std::string topicName = "/automobile/command";
+            // std::string listen_topicName = "/automobile/feedback";
 
-            if(!::ros::isInitialized())
-            {
-                int argc = 0;
-                char **argv = NULL;
+            std::string topicName = "/" + _namespace + "/command";
+            std::string listen_topicName = "/" + _namespace + "/feedback";
+            ROS_INFO_STREAM("topicName: " << topicName);
 
-                // Init a node with the name of _modelName
-                ::ros::init(argc, argv, "/" + _modelName, ::ros::init_options::NoSigintHandler);
-            }
+            // int spawn_count;
+            // if(!ros::param::get("/spawn_count", spawn_count))
+            // {
+            //     ROS_ERROR("Could not find spawn count parameter for the car plugin");
+            //     spawn_count = 0;
+            // }
+            // std::string namespace1, topicName, listen_topicName;
+            // if (spawn_count == 0)
+            // {
+            //     namespace1 = "automobile";
+            // }
+            // else
+            // {
+            //     namespace1 = "automobile" + std::to_string(spawn_count);
+            // }
+            // spawn_count++;
+            // ros::param::set("/spawn_count", spawn_count);
+            // topicName = "/" + namespace1 + "/command";
+            // listen_topicName = "/" + namespace1 + "/feedback";
+            // ROS_INFO_STREAM("Using topic name: " << topicName);
 
 
             this->_rosNode.reset(new ::ros::NodeHandle("/serialNODEvirt"));
@@ -528,7 +545,7 @@ namespace gazebo
 
         void CCarLikeRobotRosPlugin::Load(physics::ModelPtr _parent, sdf::ElementPtr _sdf)
         {
-            
+
             // Safety check
             if (_parent->GetJointCount() == 0)
             {
@@ -545,8 +562,18 @@ namespace gazebo
             this->f_speed = _sdf->Get<float>("initial_speed");
 
             this->setCommand();
-            
-            _messageHandler = std::shared_ptr<CMessageHandler>(new CMessageHandler(this->_model->GetName(),this));
+            std::string robot_namespace;
+            if (_sdf->HasElement("robotNamespace"))
+            {
+                robot_namespace = _sdf->Get<std::string>("robotNamespace");
+            }
+            else
+            {
+                robot_namespace = "automobile"; // Use default namespace
+            }
+            ROS_INFO_STREAM("robot_namespace: " << robot_namespace);
+            _messageHandler = std::shared_ptr<CMessageHandler>(new CMessageHandler(this->_model->GetName(), this, robot_namespace));
+            // _messageHandler = std::shared_ptr<CMessageHandler>(new CMessageHandler(this->_model->GetName(),this));
         }
 
         void CCarLikeRobotRosPlugin::setCommand(){

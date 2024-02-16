@@ -27,7 +27,7 @@ namespace gazebo
             // A ROS publisher
             ros::Publisher                      m_pubBNO;
             ros::Publisher                      m_pubIMU;
-            ros::Publisher                      m_pubEncoder;
+            // ros::Publisher                      m_pubEncoder;
             sensor_msgs::Imu                    m_imu_msg;
             
             utils::encoder                      m_encoder_msg;
