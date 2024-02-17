@@ -113,6 +113,7 @@ class RemoteControlTransmitterProcess():
         if command is not None:
 	
             command = json.dumps(command)
+            print(command)
             self.publisher.publish(command)  
             
 if __name__ == '__main__':

@@ -100,8 +100,8 @@
             <specular>0 0 0 0</specular>
             <emissive>1 1 1 1</emissive>
             <script>
-              <uri>model://track/materials/scripts</uri>
-              <uri>model://track/materials/textures</uri>
+              <uri>model://track_old/materials/scripts</uri>
+              <uri>model://track_old/materials/textures</uri>
               <name>BFMC_MATERIAL</name>
             </script>
           </material>
