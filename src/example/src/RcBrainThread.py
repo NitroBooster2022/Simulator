@@ -90,7 +90,7 @@ class RcBrainThread:
         """Display all parameters on the screen. 
         """
         # clear stdout for a smoother display
-        os.system('cls' if os.name=='nt' else 'clear')
+        # os.system('cls' if os.name=='nt' else 'clear')
 
         ("=========== REMOTE CONTROL ============")
         print(
