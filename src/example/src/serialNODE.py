@@ -60,6 +60,7 @@ class serialNODE():
         self.__subscribers={}
         
         rospy.init_node('serialNODE', anonymous=False)
+        self.rate = rospy.Rate(25)
         
         self.command_subscriber = rospy.Subscriber("/automobile/command", String, self._write)
             
@@ -76,6 +77,7 @@ class serialNODE():
         """
         while not rospy.is_shutdown():
             # read_chr=self.serialCom.read()
+            # print(read_chr)
             # try:
             #     read_chr=(read_chr.decode("ascii"))
             #     if read_chr=='@':
@@ -114,12 +116,13 @@ class serialNODE():
         command = json.loads(msg.data)
         # print("hh", type(command), type(msg), type(msg.data))
         # print(msg)
-        print(command)
+        # print(command)
         # Unpacking the dictionary into action and values
         command_msg = self.messageConverter.get_command(**command)
         # print(command_msg)
         self.serialCom.write(command_msg.encode('ascii'))
         self.historyFile.write(command_msg)
+        # self.rate.sleep()
             
 if __name__ == "__main__":
     serNod = serialNODE()
