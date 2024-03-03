@@ -62,7 +62,7 @@ class serialNODE():
         rospy.init_node('serialNODE', anonymous=False)
         self.rate = rospy.Rate(25)
         
-        self.command_subscriber = rospy.Subscriber("/automobile/command", String, self._write)
+        self.command_subscriber = rospy.Subscriber("/car1/command", String, self._write, queue_size=1)
             
      # ===================================== RUN ==========================================
     def run(self):
@@ -121,7 +121,7 @@ class serialNODE():
         command_msg = self.messageConverter.get_command(**command)
         # print(command_msg)
         self.serialCom.write(command_msg.encode('ascii'))
-        self.historyFile.write(command_msg)
+        # self.historyFile.write(command_msg)
         # self.rate.sleep()
             
 if __name__ == "__main__":
