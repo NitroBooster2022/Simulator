@@ -124,7 +124,7 @@ class RcBrainThread:
         # SPEED command
         elif self.currentState[0] or self.currentState[1]:
             data['action']        =  '1'
-            data['speed']         =  float(self.speed/100.0)
+            data['speed']         =  float(self.speed)/100
         # STEERING command
         elif self.currentState[2] or self.currentState[3]:
             data['action']        =  '2'

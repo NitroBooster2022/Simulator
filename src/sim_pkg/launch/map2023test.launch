@@ -3,7 +3,7 @@
   <launch>
   <rosparam command="load" file="$(find mpc)/config/gps_config.yaml" />
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
-    <arg name="world_name"   value="$(find sim_pkg)/worlds/world2023_objects2.world"/>
+    <arg name="world_name"   value="$(find sim_pkg)/worlds/world2023_test.world"/>
     <!-- <arg name="world_name"   value="$(find sim_pkg)/worlds/world2023.world"/> -->
     <arg name="paused"       value="false"/>    
     <arg name="use_sim_time" value="true"/>

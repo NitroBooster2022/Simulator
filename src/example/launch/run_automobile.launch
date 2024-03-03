@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="example" type="serialNODE.py" 			name="serialNODE"  				output="screen"/>
+</launch>

@@ -5,10 +5,18 @@ find_package(catkin REQUIRED COMPONENTS
   rospy
   std_msgs
   utils
+  roscpp
+  sensor_msgs
+  tf2_geometry_msgs
 )
 
 catkin_package(
-#  INCLUDE_DIRS include
+  LIBRARIES
+  CATKIN_DEPENDS
+    roscpp
+    sensor_msgs
+    tf2_geometry_msgs
+  DEPENDS
 )
 
 include_directories(
@@ -16,3 +24,16 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
+add_executable(serial_imu_publisher src/serial_imu_reader.cpp)
+target_link_libraries(serial_imu_publisher ${catkin_LIBRARIES})
+add_executable(serial_write src/serial_write.cpp)
+target_link_libraries(serial_write ${catkin_LIBRARIES})
+
+## Install
+install(TARGETS serial_imu_publisher
+  RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
+
+install(TARGETS serial_write
+  RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
