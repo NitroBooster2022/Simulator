@@ -53,6 +53,7 @@ class RemoteControlTransmitterProcess():
         self.rcBrain   =  RcBrainThread()   
         
         rospy.init_node('EXAMPLEnode', anonymous=False)     
+        # self.rate = rospy.Rate(20)
         self.publisher = rospy.Publisher('/' + ns + '/command', String, queue_size=1)
 
     # ===================================== RUN ==========================================
@@ -76,6 +77,7 @@ class RemoteControlTransmitterProcess():
                 keyMsg = 'p.' + str(key.char)
 
                 self._send_command(keyMsg)
+                # self.rate.sleep()
     
         except: pass
         
@@ -113,6 +115,7 @@ class RemoteControlTransmitterProcess():
         if command is not None:
 	
             command = json.dumps(command)
+            print(command)
             self.publisher.publish(command)  
             
 if __name__ == '__main__':

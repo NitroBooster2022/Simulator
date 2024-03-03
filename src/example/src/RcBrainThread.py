@@ -90,7 +90,7 @@ class RcBrainThread:
         """Display all parameters on the screen. 
         """
         # clear stdout for a smoother display
-        os.system('cls' if os.name=='nt' else 'clear')
+        # os.system('cls' if os.name=='nt' else 'clear')
 
         ("=========== REMOTE CONTROL ============")
         print(
@@ -124,7 +124,7 @@ class RcBrainThread:
         # SPEED command
         elif self.currentState[0] or self.currentState[1]:
             data['action']        =  '1'
-            data['speed']         =  float(self.speed/100.0)
+            data['speed']         =  float(self.speed)
         # STEERING command
         elif self.currentState[2] or self.currentState[3]:
             data['action']        =  '2'
