@@ -11,7 +11,7 @@ using namespace std;
 int main(int argc, char **argv) {
     ros::init(argc, argv, "serial_imu_reader_node");
     ros::NodeHandle nh;
-    ros::Publisher imu_pub = nh.advertise<sensor_msgs::Imu>("/imu/data", 10);
+    ros::Publisher imu_pub = nh.advertise<sensor_msgs::Imu>("/car1/data", 10);
 
     io_service io;
     serial_port serial(io);
@@ -111,7 +111,7 @@ int main(int argc, char **argv) {
 
                 // Convert Euler angles to quaternion
                 tf2::Quaternion q;
-                q.setRPY(roll, pitch, yaw);
+                q.setRPY(roll*M_PI/180, pitch*M_PI/180, yaw*M_PI/180);
                 imu_msg.orientation.x = q.x();
                 imu_msg.orientation.y = q.y();
                 imu_msg.orientation.z = q.z();
