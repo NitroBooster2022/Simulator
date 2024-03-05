@@ -8,6 +8,7 @@ rosrun example serialNODE.py
 
 rosrun control lane -s True
 roslaunch control signFastest.launch show:=true
+roslaunch control cameraNode.launch
 roslaunch mpc controller25.launch name:=car1 sign:=true lane:=true
 
 //
