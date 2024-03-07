@@ -2,7 +2,6 @@
 #include <string>
 #include <boost/asio.hpp>
 
-using namespace boost::asio;
 using namespace std;
 
 string speed(float f_velocity) {
@@ -22,11 +21,11 @@ string steer(float f_angle) {
 }
 
 int main() {
-    io_service io;
+    boost::asio::io_service io;
     boost::asio::serial_port serial(io);
 
     serial.open("/dev/ttyACM0");
-    serial.set_option(serial_port_base::baud_rate(19200));
+    serial.set_option(boost::asio::serial_port_base::baud_rate(19200));
 
     string speed_msg = speed(0.0);
     cout << "speed msg sent: " << speed_msg << endl;

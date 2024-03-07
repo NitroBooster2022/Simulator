@@ -34,11 +34,12 @@ from messageconverter import MessageConverter
 import json
 
 import rospy
+import argparse
 
 from std_msgs.msg      import String
 
 class serialNODE():
-    def __init__(self):
+    def __init__(self, ns = "automobile"):
         """It forwards the control messages received from socket to the serial handling node. 
         """
         devFile = '/dev/ttyACM0'
@@ -62,7 +63,7 @@ class serialNODE():
         rospy.init_node('serialNODE', anonymous=False)
         self.rate = rospy.Rate(25)
         
-        self.command_subscriber = rospy.Subscriber("/car1/command", String, self._write, queue_size=1)
+        self.command_subscriber = rospy.Subscriber('/' + ns + '/command', String, self._write, queue_size=1)
             
      # ===================================== RUN ==========================================
     def run(self):
@@ -119,11 +120,19 @@ class serialNODE():
         # print(command)
         # Unpacking the dictionary into action and values
         command_msg = self.messageConverter.get_command(**command)
+        # command_msg = '#7:1;;'
         # print(command_msg)
         self.serialCom.write(command_msg.encode('ascii'))
         # self.historyFile.write(command_msg)
         # self.rate.sleep()
             
 if __name__ == "__main__":
-    serNod = serialNODE()
-    serNod.run()
+    # add an argument for namespace name, default is automobile
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--ns", type=str, default="automobile", help="namespace name")
+    args = parser.parse_args()
+    try:
+        serNod = serialNODE(args.ns)
+        serNod.run()
+    except rospy.ROSInterruptException:
+        pass
