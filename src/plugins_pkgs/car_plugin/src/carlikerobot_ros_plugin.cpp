@@ -74,7 +74,9 @@ namespace gazebo
         {           
         	rapidjson::Document doc;
         	const char* c = _msg.data.c_str();
+            ROS_INFO("Received message: %s", c);
         	doc.Parse(c);
+            ROS_INFO("Parsed message");
         	if (doc.HasMember("action"))
 		    {
 			    std::string command = doc["action"].GetString();
