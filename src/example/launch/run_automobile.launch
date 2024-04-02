@@ -1,3 +1,6 @@
 <launch>
-    <node pkg="example" type="serialNODE.py" 			name="serialNODE"  				output="screen"/>
+<arg name="ns"  default="automobile" doc="car namespace"/>
+
+<node pkg="example" args="--ns $(arg ns)" name="serialNODE" output="screen" type="serialNODE.py" required="true">
+</node>
 </launch>

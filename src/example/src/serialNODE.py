@@ -130,7 +130,7 @@ if __name__ == "__main__":
     # add an argument for namespace name, default is automobile
     parser = argparse.ArgumentParser()
     parser.add_argument("--ns", type=str, default="automobile", help="namespace name")
-    args = parser.parse_args()
+    args = parser.parse_args(rospy.myargv()[1:])
     try:
         serNod = serialNODE(args.ns)
         serNod.run()
