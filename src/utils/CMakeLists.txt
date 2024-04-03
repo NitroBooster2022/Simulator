@@ -25,6 +25,7 @@ find_package(catkin REQUIRED COMPONENTS
   nav.srv
   get_direction.srv
   dotted.srv
+  waypoints.srv
 )
 
  generate_messages(

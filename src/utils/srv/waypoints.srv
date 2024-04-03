@@ -1,0 +1,9 @@
+# Request part string for name 
+string pathName
+string vrefName
+---
+# Response part
+std_msgs/Float64MultiArray state_refs
+std_msgs/Float64MultiArray input_refs
+std_msgs/Float64MultiArray wp_attributes
+std_msgs/Float64MultiArray wp_normals
