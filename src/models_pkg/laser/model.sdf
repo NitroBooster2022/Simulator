@@ -103,25 +103,25 @@
       <sensor type="ray" name="rplidar">
         <pose>0 0 0 0 0 0</pose>
         <visualize>true</visualize>
-        <update_rate>5.5</update_rate>
+        <update_rate>10</update_rate>
         <ray>
           <scan>
             <horizontal>
               <samples>360</samples>
               <resolution>1</resolution>
-              <min_angle>-1.357</min_angle>
-              <max_angle>1.357</max_angle>
+              <min_angle>-3</min_angle>
+              <max_angle>3</max_angle>
             </horizontal>
           </scan>
           <range>
-            <min>0.10</min>
-            <max>30.0</max>
+            <min>0.03</min>
+            <max>10.0</max>
             <resolution>0.01</resolution>
           </range>
           <noise>
             <type>gaussian</type>
             <mean>0.0</mean>
-            <stddev>0.015</stddev>
+            <stddev>0.0</stddev>
           </noise>
         </ray>
 
