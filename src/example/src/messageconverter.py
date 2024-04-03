@@ -88,6 +88,8 @@ class MessageConverter:
             valType = type(value)
 
             if valType == float:
+                if action == '1':
+                        value = value*100
                 if enhPrec:
                     command += '{0:.6f};'.format(value)
                 else:
