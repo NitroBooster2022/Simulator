@@ -1,0 +1,72 @@
+[
+{
+  "directory": "/home/yahboom/oradar_ws/src/oradar_ros/sdk/build",
+  "command": "/usr/bin/c++   -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/. -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/core -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/src -I/home/yahboom/oradar_ws/src/oradar_ros/sdk -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/build   -std=c++11   -fPIC -o CMakeFiles/oradar_sdk.dir/core/base/timer.cpp.o -c /home/yahboom/oradar_ws/src/oradar_ros/sdk/core/base/timer.cpp",
+  "file": "/home/yahboom/oradar_ws/src/oradar_ros/sdk/core/base/timer.cpp"
+},
+{
+  "directory": "/home/yahboom/oradar_ws/src/oradar_ros/sdk/build",
+  "command": "/usr/bin/c++   -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/. -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/core -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/src -I/home/yahboom/oradar_ws/src/oradar_ros/sdk -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/build   -std=c++11   -fPIC -o CMakeFiles/oradar_sdk.dir/core/network/ActiveSocket.cpp.o -c /home/yahboom/oradar_ws/src/oradar_ros/sdk/core/network/ActiveSocket.cpp",
+  "file": "/home/yahboom/oradar_ws/src/oradar_ros/sdk/core/network/ActiveSocket.cpp"
+},
+{
+  "directory": "/home/yahboom/oradar_ws/src/oradar_ros/sdk/build",
+  "command": "/usr/bin/c++   -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/. -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/core -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/src -I/home/yahboom/oradar_ws/src/oradar_ros/sdk -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/build   -std=c++11   -fPIC -o CMakeFiles/oradar_sdk.dir/core/network/PassiveSocket.cpp.o -c /home/yahboom/oradar_ws/src/oradar_ros/sdk/core/network/PassiveSocket.cpp",
+  "file": "/home/yahboom/oradar_ws/src/oradar_ros/sdk/core/network/PassiveSocket.cpp"
+},
+{
+  "directory": "/home/yahboom/oradar_ws/src/oradar_ros/sdk/build",
+  "command": "/usr/bin/c++   -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/. -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/core -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/src -I/home/yahboom/oradar_ws/src/oradar_ros/sdk -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/build   -std=c++11   -fPIC -o CMakeFiles/oradar_sdk.dir/core/network/SimpleSocket.cpp.o -c /home/yahboom/oradar_ws/src/oradar_ros/sdk/core/network/SimpleSocket.cpp",
+  "file": "/home/yahboom/oradar_ws/src/oradar_ros/sdk/core/network/SimpleSocket.cpp"
+},
+{
+  "directory": "/home/yahboom/oradar_ws/src/oradar_ros/sdk/build",
+  "command": "/usr/bin/c++   -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/. -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/core -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/src -I/home/yahboom/oradar_ws/src/oradar_ros/sdk -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/build   -std=c++11   -fPIC -o CMakeFiles/oradar_sdk.dir/core/serial/serial.cpp.o -c /home/yahboom/oradar_ws/src/oradar_ros/sdk/core/serial/serial.cpp",
+  "file": "/home/yahboom/oradar_ws/src/oradar_ros/sdk/core/serial/serial.cpp"
+},
+{
+  "directory": "/home/yahboom/oradar_ws/src/oradar_ros/sdk/build",
+  "command": "/usr/bin/cc  -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/. -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/core -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/src -I/home/yahboom/oradar_ws/src/oradar_ros/sdk -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/build    -fPIC -o CMakeFiles/oradar_sdk.dir/core/serial/impl/unix/lock.c.o   -c /home/yahboom/oradar_ws/src/oradar_ros/sdk/core/serial/impl/unix/lock.c",
+  "file": "/home/yahboom/oradar_ws/src/oradar_ros/sdk/core/serial/impl/unix/lock.c"
+},
+{
+  "directory": "/home/yahboom/oradar_ws/src/oradar_ros/sdk/build",
+  "command": "/usr/bin/c++   -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/. -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/core -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/src -I/home/yahboom/oradar_ws/src/oradar_ros/sdk -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/build   -std=c++11   -fPIC -o CMakeFiles/oradar_sdk.dir/core/serial/impl/unix/list_ports_linux.cpp.o -c /home/yahboom/oradar_ws/src/oradar_ros/sdk/core/serial/impl/unix/list_ports_linux.cpp",
+  "file": "/home/yahboom/oradar_ws/src/oradar_ros/sdk/core/serial/impl/unix/list_ports_linux.cpp"
+},
+{
+  "directory": "/home/yahboom/oradar_ws/src/oradar_ros/sdk/build",
+  "command": "/usr/bin/c++   -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/. -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/core -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/src -I/home/yahboom/oradar_ws/src/oradar_ros/sdk -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/build   -std=c++11   -fPIC -o CMakeFiles/oradar_sdk.dir/core/serial/impl/unix/unix_serial.cpp.o -c /home/yahboom/oradar_ws/src/oradar_ros/sdk/core/serial/impl/unix/unix_serial.cpp",
+  "file": "/home/yahboom/oradar_ws/src/oradar_ros/sdk/core/serial/impl/unix/unix_serial.cpp"
+},
+{
+  "directory": "/home/yahboom/oradar_ws/src/oradar_ros/sdk/build",
+  "command": "/usr/bin/c++   -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/. -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/core -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/src -I/home/yahboom/oradar_ws/src/oradar_ros/sdk -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/build   -std=c++11   -fPIC -o CMakeFiles/oradar_sdk.dir/src/ord_lidar_c_api_driver.cpp.o -c /home/yahboom/oradar_ws/src/oradar_ros/sdk/src/ord_lidar_c_api_driver.cpp",
+  "file": "/home/yahboom/oradar_ws/src/oradar_ros/sdk/src/ord_lidar_c_api_driver.cpp"
+},
+{
+  "directory": "/home/yahboom/oradar_ws/src/oradar_ros/sdk/build",
+  "command": "/usr/bin/c++   -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/. -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/core -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/src -I/home/yahboom/oradar_ws/src/oradar_ros/sdk -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/build   -std=c++11   -fPIC -o CMakeFiles/oradar_sdk.dir/src/ord_lidar_driver.cpp.o -c /home/yahboom/oradar_ws/src/oradar_ros/sdk/src/ord_lidar_driver.cpp",
+  "file": "/home/yahboom/oradar_ws/src/oradar_ros/sdk/src/ord_lidar_driver.cpp"
+},
+{
+  "directory": "/home/yahboom/oradar_ws/src/oradar_ros/sdk/build",
+  "command": "/usr/bin/c++   -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/. -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/core -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/src -I/home/yahboom/oradar_ws/src/oradar_ros/sdk -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/build   -std=c++11   -fPIC -o CMakeFiles/oradar_sdk.dir/src/filters/FullScanFilter.cpp.o -c /home/yahboom/oradar_ws/src/oradar_ros/sdk/src/filters/FullScanFilter.cpp",
+  "file": "/home/yahboom/oradar_ws/src/oradar_ros/sdk/src/filters/FullScanFilter.cpp"
+},
+{
+  "directory": "/home/yahboom/oradar_ws/src/oradar_ros/sdk/build/samples",
+  "command": "/usr/bin/c++   -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/. -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/core -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/src -I/home/yahboom/oradar_ws/src/oradar_ros/sdk -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/.. -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/build/samples   -std=c++11 -std=c++11   -fPIC -o CMakeFiles/non-blocking_test.dir/non-blocking_test.cpp.o -c /home/yahboom/oradar_ws/src/oradar_ros/sdk/samples/non-blocking_test.cpp",
+  "file": "/home/yahboom/oradar_ws/src/oradar_ros/sdk/samples/non-blocking_test.cpp"
+},
+{
+  "directory": "/home/yahboom/oradar_ws/src/oradar_ros/sdk/build/samples",
+  "command": "/usr/bin/c++   -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/. -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/core -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/src -I/home/yahboom/oradar_ws/src/oradar_ros/sdk -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/.. -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/build/samples   -std=c++11 -std=c++11   -fPIC -o CMakeFiles/blocking_test.dir/blocking_test.cpp.o -c /home/yahboom/oradar_ws/src/oradar_ros/sdk/samples/blocking_test.cpp",
+  "file": "/home/yahboom/oradar_ws/src/oradar_ros/sdk/samples/blocking_test.cpp"
+},
+{
+  "directory": "/home/yahboom/oradar_ws/src/oradar_ros/sdk/build/samples",
+  "command": "/usr/bin/cc  -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/. -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/core -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/src -I/home/yahboom/oradar_ws/src/oradar_ros/sdk -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/.. -I/home/yahboom/oradar_ws/src/oradar_ros/sdk/build/samples    -fPIC -o CMakeFiles/blocking_c_api_test.dir/blocking_c_api_test.c.o   -c /home/yahboom/oradar_ws/src/oradar_ros/sdk/samples/blocking_c_api_test.c",
+  "file": "/home/yahboom/oradar_ws/src/oradar_ros/sdk/samples/blocking_c_api_test.c"
+}
+]
