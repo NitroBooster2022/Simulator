@@ -3,7 +3,7 @@ string pathName
 string vrefName
 ---
 # Response part
-std_msgs/Float64MultiArray state_refs
-std_msgs/Float64MultiArray input_refs
-std_msgs/Float64MultiArray wp_attributes
-std_msgs/Float64MultiArray wp_normals
+std_msgs/Float32MultiArray state_refs
+std_msgs/Float32MultiArray input_refs
+std_msgs/Float32MultiArray wp_attributes
+std_msgs/Float32MultiArray wp_normals
