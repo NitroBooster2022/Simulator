@@ -39,14 +39,14 @@ import argparse
 from std_msgs.msg      import String
 
 class serialNODE():
-    def __init__(self, ns = "automobile"):
+    def __init__(self, ns = "automobile", rate = 19200):
         """It forwards the control messages received from socket to the serial handling node. 
         """
         devFile = '/dev/ttyACM0'
         logFile = 'historyFile.txt'
         
         # comm init       
-        self.serialCom = serial.Serial(devFile,19200,timeout=0.1)
+        self.serialCom = serial.Serial(devFile,rate,timeout=0.1)
         self.serialCom.flushInput()
         self.serialCom.flushOutput()
 
@@ -130,9 +130,10 @@ if __name__ == "__main__":
     # add an argument for namespace name, default is automobile
     parser = argparse.ArgumentParser()
     parser.add_argument("--ns", type=str, default="automobile", help="namespace name")
+    parser.add_argument("--baudrate", type=str, default=19200, help="serial baudrate")
     args = parser.parse_args(rospy.myargv()[1:])
     try:
-        serNod = serialNODE(args.ns)
+        serNod = serialNODE(args.ns, int(args.baudrate))
         serNod.run()
     except rospy.ROSInterruptException:
         pass
