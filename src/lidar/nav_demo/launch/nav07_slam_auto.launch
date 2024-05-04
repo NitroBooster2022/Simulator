@@ -1,0 +1,4 @@
+<launch>
+    <include file="$(find nav_demo)/launch/nav01_slam.launch"/>
+    <include file="$(find nav_demo)/launch/nav05_path.launch"/>
+</launch>

@@ -7,3 +7,4 @@ src/realsense-ros
 src/CMakeLists.txt
 src/mpc
 src/LaneDetection
+src/Dashboard
