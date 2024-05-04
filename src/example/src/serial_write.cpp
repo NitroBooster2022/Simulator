@@ -20,6 +20,14 @@ string steer(float f_angle) {
     return strs.str();
 }
 
+string both(float f_velocity, float f_angle) {
+    stringstream strs;
+    char buff[100];
+    snprintf(buff, sizeof(buff), "%.2f:%.2f;;\r\n", f_velocity, f_angle);
+    strs << "#" << "8" << ":" << buff;
+    return strs.str();
+}
+
 int main() {
     boost::asio::io_service io;
     boost::asio::serial_port serial(io);
@@ -34,6 +42,12 @@ int main() {
     string steer_msg = steer(0.0);
     cout << "steer msg sent: " << steer_msg << endl;
     boost::asio::write(serial, boost::asio::buffer(steer_msg));
+
+    string both_msg = both(0.0, 0.0);
+    cout << "both msg sent: " << both_msg << endl;
+    boost::asio::write(serial, boost::asio::buffer(both_msg));
+
+    serial.close();
 
     return 0;
 }
