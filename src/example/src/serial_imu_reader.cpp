@@ -17,7 +17,7 @@ int main(int argc, char **argv) {
     serial_port serial(io);
 
     serial.open("/dev/ttyACM0");
-    serial.set_option(serial_port_base::baud_rate(19200));
+    serial.set_option(serial_port_base::baud_rate(115200));
 
     char data[256]; // Buffer to store data
     size_t length = 0;
@@ -37,7 +37,7 @@ int main(int argc, char **argv) {
             buffer.erase(0, end_pos + 1); // Remove the processed part from the buffer
 
             if (line.find("@7") != string::npos) {
-                // cout << "Received data: " << line << endl; // Print received data
+                cout << "Received data: " << line << endl; // Print received data
                 sensor_msgs::Imu imu_msg;
                 imu_msg.header.stamp = ros::Time::now();
                 imu_msg.header.frame_id = "imu_frame";
@@ -53,10 +53,10 @@ int main(int argc, char **argv) {
                 }
 
                 // Extract substrings between ';' characters
-                std::string roll_str, pitch_str, yaw_str, accelx_str, accely_str, accelz_str;
+                std::string roll_str, pitch_str, yaw_str, accelx_str, accely_str, accelz_str, gyrox_str, gyroy_str, gyroz_str;
                 size_t end_pos = pos;
                 pos++;
-                for (int i = 0; i < 6; ++i) {
+                for (int i = 0; i < 9; ++i) {
                     end_pos = line.find(';', pos);
                     if (end_pos != std::string::npos) {
                         switch (i) {
@@ -78,6 +78,15 @@ int main(int argc, char **argv) {
                             case 5:
                                 accelz_str = line.substr(pos, end_pos - pos);
                                 break;
+                            case 6:
+                                gyrox_str = line.substr(pos, end_pos - pos);
+                                break;
+                            case 7:
+                                gyroy_str = line.substr(pos, end_pos - pos);
+                                break;
+                            case 8:
+                                gyroz_str = line.substr(pos, end_pos - pos);
+                                break;
                         }
                         pos = end_pos + 1;
                     } else {
@@ -92,6 +101,9 @@ int main(int argc, char **argv) {
                 // cout << "Accel X: " << accelx_str << endl;
                 // cout << "Accel Y: " << accely_str << endl;
                 // cout << "Accel Z: " << accelz_str << endl;
+                // cout << "Gyro X: " << gyrox_str << endl;
+                // cout << "Gyro Y: " << gyroy_str << endl;
+                // cout << "Gyro Z: " << gyroz_str << endl;
 
                 // Convert substrings to floating-point numbers
                 double roll = stod(roll_str);
@@ -100,6 +112,9 @@ int main(int argc, char **argv) {
                 double accelx = stod(accelx_str);
                 double accely = stod(accely_str);
                 double accelz = stod(accelz_str);
+                double gyrox = stod(gyrox_str);
+                double gyroy = stod(gyroy_str);
+                double gyroz = stod(gyroz_str);
 
                 // Output the extracted values
                 // cout << "Roll: " << roll << endl;
@@ -108,6 +123,9 @@ int main(int argc, char **argv) {
                 // cout << "Accel X: " << accelx << endl;
                 // cout << "Accel Y: " << accely << endl;
                 // cout << "Accel Z: " << accelz << endl;
+                // cout << "Gyro X: " << gyrox << endl;
+                // cout << "Gyro Y: " << gyroy << endl;
+                // cout << "Gyro Z: " << gyroz << endl;
 
                 // Convert Euler angles to quaternion
                 tf2::Quaternion q;
@@ -121,6 +139,10 @@ int main(int argc, char **argv) {
                 imu_msg.linear_acceleration.x = accelx;
                 imu_msg.linear_acceleration.y = accely;
                 imu_msg.linear_acceleration.z = accelz;
+
+                imu_msg.angular_velocity.x = gyrox*2*M_PI;
+                imu_msg.angular_velocity.y = gyroy*2*M_PI;
+                imu_msg.angular_velocity.z = gyroz*2*M_PI;
 
                 imu_pub.publish(imu_msg); // Publish the IMU message
             }
