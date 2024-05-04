@@ -140,9 +140,9 @@ int main(int argc, char **argv) {
                 imu_msg.linear_acceleration.y = accely;
                 imu_msg.linear_acceleration.z = accelz;
 
-                imu_msg.angular_velocity.x = gyrox;
-                imu_msg.angular_velocity.y = gyroy;
-                imu_msg.angular_velocity.z = gyroz;
+                imu_msg.angular_velocity.x = gyrox*2*M_PI;
+                imu_msg.angular_velocity.y = gyroy*2*M_PI;
+                imu_msg.angular_velocity.z = gyroz*2*M_PI;
 
                 imu_pub.publish(imu_msg); // Publish the IMU message
             }
