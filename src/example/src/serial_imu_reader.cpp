@@ -17,7 +17,7 @@ int main(int argc, char **argv) {
     serial_port serial(io);
 
     serial.open("/dev/ttyACM0");
-    serial.set_option(serial_port_base::baud_rate(19200));
+    serial.set_option(serial_port_base::baud_rate(115200));
 
     char data[256]; // Buffer to store data
     size_t length = 0;
@@ -37,7 +37,7 @@ int main(int argc, char **argv) {
             buffer.erase(0, end_pos + 1); // Remove the processed part from the buffer
 
             if (line.find("@7") != string::npos) {
-                // cout << "Received data: " << line << endl; // Print received data
+                cout << "Received data: " << line << endl; // Print received data
                 sensor_msgs::Imu imu_msg;
                 imu_msg.header.stamp = ros::Time::now();
                 imu_msg.header.frame_id = "imu_frame";

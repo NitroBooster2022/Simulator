@@ -1,11 +1,11 @@
 <launch>
     
-    <!-- <include file="$(find oradar_lidar)/launch/ms200_scan.launch"/> -->
-    <!-- <include file="$(find rf2o_laser_odometry)/launch/rf2o_laser_odometry.launch"/> -->
+    <include file="$(find oradar_lidar)/launch/ms200_scan.launch"/>
+    <include file="$(find rf2o_laser_odometry)/launch/rf2o_laser_odometry.launch"/>
     <!--    激光雷达的坐标系-->
-    <!-- <node pkg="tf" type="static_transform_publisher" name="base_link_to_laser"
-          args="0 0 0.3 0 0 0  /chassis /laser  100"/> -->
+    <node pkg="tf" type="static_transform_publisher" name="base_link_to_laser"
+          args="0 0 0.3 0 0 0  /chassis /laser  100"/>
     <include file="$(find oradar_lidar)/launch/gmapping.launch"/>
-    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find oradar_lidar)/rviz/test_map.rviz" />
+    <!-- <node name="rviz" pkg="rviz" type="rviz" args="-d $(find oradar_lidar)/rviz/test_map.rviz" /> -->
 
 </launch>
