@@ -62,8 +62,8 @@ E-mail: kint.zhao@slamtec.com
         <!-- 基于Neff的重采样阈值-->
         <param name="resampleThreshold" value="0.5"/>
         <!-- 滤波器的粒子数目-->
-        <!-- <param name="particles" value="30"/> -->
-        <param name="particles" value="100"/>
+        <param name="particles" value="30"/>
+        <!-- <param name="particles" value="100"/> -->
         <!-- 地图x向初始最小尺寸-->
         <param name="xmin" value="-10.0"/>
         <!-- 地图y向初始最小尺寸-->
