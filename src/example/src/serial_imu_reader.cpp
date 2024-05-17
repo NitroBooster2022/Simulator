@@ -37,7 +37,7 @@ int main(int argc, char **argv) {
             buffer.erase(0, end_pos + 1); // Remove the processed part from the buffer
 
             if (line.find("@7") != string::npos) {
-                cout << "Received data: " << line << endl; // Print received data
+                // cout << "Received data: " << line << endl; // Print received data
                 sensor_msgs::Imu imu_msg;
                 imu_msg.header.stamp = ros::Time::now();
                 imu_msg.header.frame_id = "imu_frame";
@@ -115,6 +115,13 @@ int main(int argc, char **argv) {
                 double gyrox = stod(gyrox_str);
                 double gyroy = stod(gyroy_str);
                 double gyroz = stod(gyroz_str);
+
+                if (abs(accelx)>0.1){
+                    cout << "AX: " << accelx_str << endl;
+                }
+                if (abs(accely)>0.1){
+                    cout << "AY: " << accely_str << endl;
+                }
 
                 // Output the extracted values
                 // cout << "Roll: " << roll << endl;
