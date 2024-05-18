@@ -80,7 +80,7 @@
           <geometry>
             <plane>
               <normal>0 0 1</normal>
-              <size>20.541 13.656</size>
+              <size>20.696 13.786</size>
             </plane>
           </geometry>
           <surface>
@@ -107,7 +107,7 @@
           <geometry>
             <plane>
               <normal>0 0 1</normal>
-              <size>20.541 13.656</size>
+              <size>20.696 13.786</size>
             </plane>
           </geometry>
           <material>
@@ -126,7 +126,7 @@
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
-      <pose>10.2706 6.893 0 0 -0 0</pose>
+      <pose>10.348 6.893 0 0 -0 0</pose>
     </model>
     <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
     <atmosphere type='adiabatic'/>
@@ -5856,10 +5856,10 @@
         </link>
       </model>
       <model name='track'>
-        <pose>10.2706 6.893 0 0 -0 0</pose>
+        <pose>10.348 6.893 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>10.2706 6.893 0 0 -0 0</pose>
+          <pose>10.348 6.893 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
