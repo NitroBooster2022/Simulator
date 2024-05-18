@@ -1,8 +1,8 @@
-// Launch camera node
+#Launch camera node
 
 roslaunch realsense2_camera rs_camera.launch align_depth:=true depth_width:=640 depth_height:=480 depth_fps:=30 color_width:=640 color_height:=480 color_fps:=30 unite_imu_method:=copy enable_accel:=true enable_gyro:=true
 
-//simulator
+#simulator
 rosrun example serial_imu_publisher
 rosrun example serialNODE.py
 
@@ -10,4 +10,18 @@ rosrun control lane -s True
 roslaunch control signFastest.launch show:=true
 roslaunch mpc controller25.launch name:=car1 sign:=true lane:=true
 
-//
+#
+source devel/setup.bash
+roslaunch control cameraNode.launch newlane:=false show:=false real:=true  thread:=true realsense:=true # THIS ONE GOOD - Set realsense to false if using camera_node
+roslaunch mpc ekf.launch # if using gps
+roslaunch mpc controller.launch real:=true v:=18 sign:=true ekf:=true lane:=true gps:=true # with gps
+roslaunch mpc controller.launch real:=true v:=18 sign:=true ekf:=false lane:=true gps:=false # without gps
+#roslaunch nav_demo test_amcl.launch 
+#rosrun example serial_imu_publisher 
+
+nano ~/.bashrc
+source ~/.bashrc
+
+#gps
+cd src/Dashboard/ECC-BFMC\ Brain\ master\ src-data_TrafficCommunication/
+python3 processTrafficCommunication.py
